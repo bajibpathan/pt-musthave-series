@@ -1,8 +1,9 @@
+<html>
 <style>
 blue { color: #ADD8E6 }
 yellow { color: #feff80}
 </style>
-
+</html>
 # <blue>Performance Testing - Must Have Skills - Series</blue>
 
 This repo is for aspiring performance testers who would like to learn the essential performance testing skills. This series has been divided into 8 modules. In each module, we will foucs on the core concept of the module with real-time examples. The concepts that we are going to dive deep into in each module has been listed in the [course-index]() page. Please note that, this index page will be regularly updated to keep the series up-to-date.
