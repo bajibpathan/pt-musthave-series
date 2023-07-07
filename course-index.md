@@ -1,10 +1,6 @@
-<style>
-blue { color: #ADD8E6 }
-</style>
-
 # Performance Testing Must-have skills series
 
-## <blue>Module 1: Software Testing</blue>
+## Module 1: Software Testing
 
 - What is Testing?
 - What is Software?
@@ -17,7 +13,7 @@ blue { color: #ADD8E6 }
 - Different Types of Non-functional testing?
 - General view of testing phases
 
-## <blue>Module 2: SDLC (Software Development Life Cycle) Concepts</blue>
+## Module 2: SDLC (Software Development Life Cycle) Concepts
 
 - What is SDLC?
 - Objective of SDLC
@@ -25,7 +21,7 @@ blue { color: #ADD8E6 }
 - Different types of SDLC methodologies and their differences?
 - Terminology used in the SDLC methodologies
 
-## <blue>Module 3: Server Architecture Basics</blue>
+## Module 3: Server Architecture Basics
 
 - What is Architecture
 - What is a Server?
@@ -39,7 +35,7 @@ blue { color: #ADD8E6 }
 - Serverless Architecture
 - What is Protocol?
 
-## <blue>Module 4: Performance Testing Core Concepts</blue>
+## Module 4: Performance Testing Core Concepts
 
 - What is Performance Testing
 - Why do we need to Performance Testing?
@@ -57,7 +53,7 @@ blue { color: #ADD8E6 }
 - Types of Performance Metrics
 - Commonly used Terminology
 
-## <blue>Module 5: Programming Language Concepts</blue>
+## Module 5: Programming Language Concepts
 
 - Introduction to Apache Groovy
   - Why Groovy?
@@ -80,7 +76,7 @@ blue { color: #ADD8E6 }
 - File I/O Operations (Read & Write)
 - Regular Expressions
 
-## <blue>Module 6: Performance Testing Tools</blue>
+## Module 6: Performance Testing Tools
 
 - How to choose the right testing tool ?
 - Popular performance tools available in the Industry
@@ -114,7 +110,7 @@ blue { color: #ADD8E6 }
 - Misc Jmeter concepts
 - Tips & Tricks
 
-## <blue>Module 7: Monitoring tools</blue>
+## Module 7: Monitoring tools
 
 - Introduction to Performance Monitoring
 - Monitoring Areas
@@ -132,7 +128,7 @@ blue { color: #ADD8E6 }
       - Distributed tracing
     - Dashboard creation
 
-## <blue>Module 8: Documentation tools</blue>
+## Module 8: Documentation tools
 
 - Introduction to Microsoft Office
 - Different Components of MS Office
