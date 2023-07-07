@@ -1,6 +1,6 @@
 # Performance Testing - Must Have Skills - Series
 
-This repo is for aspiring performance testers who would like to learn the essential performance testing skills. This series has been divided into 8 modules. In each module, we will foucs on the core concept of the module with real-time examples. The concepts that we are going to dive deep into in each module has been listed in the [course-index]() page. Please note that, this index page will be regularly updated to keep the series up-to-date.
+This repo is for aspiring performance testers who would like to learn the essential performance testing skills. This series has been divided into 8 modules. In each module, we will foucs on the core concept of the module with real-time examples. The concepts that we are going to dive deep into in each module has been listed in the [course-index](https://github.com/bajibpathan/pt-musthave-series/blob/main/course-index.md) page. Please note that, this index page will be regularly updated to keep the series up-to-date.
 
 For each module, I'll create a folder in this repo with that module number and update all the references and the important concepts for a quick overview.
 
