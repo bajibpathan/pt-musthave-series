@@ -1,0 +1,85 @@
+Module # 1 - Part # 1
+What is Testing?
+======================
+It's a pre-defined process to validate the requirements of the product or service to ensure it meets quality.
+
+What is Software?
+=======================
+It's a set of instructions or programs that tell the computer what to do.
+
+Types of Software
+=======================
+System Softwares 
+Application Softwares 
+
+
+System Softwares
+-----------------
+It's a middle layer between user and computer hardware. It manage computer hardware behavior and provide basic functionalities to users 
+   Ex: Operating System (Windows, MacOs, Linux, Android) 
+
+Appication Sotwares
+-------------------
+They are user programs that help them in  completing their tasks.
+Example: Calculator app, Alarm Clock app & Notes taking app
+
+
+Differences between System Softwares & Application Softwares
+============================================================
+System softwares					Application Software
+-------------------					----------------------
+All other softwares work well		Developed for a specific task
+and maintain system resoures					
+
+Uses low-level programming for      Uses high-level progamming
+development							langauges 
+Ex: assembly & machine langugages	Ex: Python, Java, C++ etc
+
+The system cannot run without it.   System can run without it
+Starts running when system starts	It runs based on user need
+and stops when the system stops
+
+Runs independently					Requires system software to run
+
+
+
+What is Software Testing?
+=============================
+It's an activity to find issues / defects in the software.
+
+Before releasing our software or application to the customers, we need to make sure that all the functionalities of the software are working as expected.
+
+Software Testing can be divided into 2 steps
+
+Verification - Ensures  that the software implements the functionality correctly
+
+Validation - Ensure that software meets the customer requirements.
+
+
+Why do we need to do Testing
+=============================
+Testing is important because software issue could be expensive or even dangerous. It can potentially cause monetary and human loss.
+
+- Apr 26, 1994, Major Airlines Flight 140 crashed into the ground killing 264 of the 271 people due to software issue
+ 
+
+- Software bugs caused the bank accounts of 823 customers of a major U.S. bank to be credited with $924 millions each in May of 1996
+
+- In November of 1997 the stock of a major health industry company dropped 60% due to reports of failures in computer billing systems, problems with a large database conversion, and inadequate software testing
+
+
+Why the Software has issues?
+============================
+- Miscommunication between teams
+- Software Complexity
+- Programming Erros
+- Frequent requirement changes
+
+
+Benefits of Software Testing
+===========================
+- Best quality product in the market
+- Focus on actual business instead of fixing the issues
+- Save lots of time and resources
+- Improve customer satisfaction and trust
+- More profit to the company
