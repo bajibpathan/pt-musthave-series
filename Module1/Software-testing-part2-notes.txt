@@ -1,0 +1,130 @@
+Module # 1 - Part # 2
+
+Types of Software Testing
+======================
+Functional Testing
+Non-Functional Testing
+
+Functional Testing Types
+----------------------
+- Unit Testing
+- Integration Testing
+- System Testing
+- Acceptance Testing
+
+Non-Fucntional Testing Types
+-----------------------
+- Performance Testing
+- Security Testing
+- Compatibility Testing
+- Usability Testing
+
+Functional Testing
+------------------
+Verfiying the functionalites of a product / system
+Ensures system works as per the functional requirements
+It specifies which functionalites need to be tested
+
+Unit Testing
+-------------
+Individual component or units  will be tested
+Mostly performed by developer
+Usually White box methodology will be carried out
+Identify bugs early in development process
+
+Integration Testing
+-------------------
+Two or more modules of an application are logically grouped together and tested
+To identify the issues between Integrated systems
+Perofrmed by tester
+Ensures that different Integrated sytems work together
+
+System Testing
+--------------
+Complete system will be tested
+Sanity, Smoke, End-to-End  tests will be performed
+Perofrmed by tester
+Ensures the whole system is working as per the requirements.
+
+Acceptance testing
+-----------------
+Test the application / software with real-time scenarios
+It is also called as UAT (User Acceptance Testing)
+Perofrmed by clients / business users / customers
+Last phase of testing before software goes live
+
+Non-Functional Testing
+---------------------
+Verifies Non-functional aspects of the system / software
+Ensures system meets all non-fucntional requierments
+It specifies how well system should respond
+It will reveal the pain points & confusion areas of the software
+It helps to improve the user experience
+It helps you to gather real feedback about the software
+
+
+Performance Testing
+-----------------
+Assessing system performance in terms of  Speed, Stability & Scalability
+Mostly performed by Performance Testers
+It will be tested by applying load onto the system
+Identify performance bottlenecks in the system.
+
+Security Teting
+---------------
+Ensure that the system meets relevant security standards and regulations
+It ensures only authorized or authenticated users allowed to access the system.
+Evaluate the system’s ability to withstand an attack
+Identify the potential flaws and weakness in the software sytem
+
+Compatibility Testing
+---------------------
+Validates software behavior on different platforms, different configurations, different browsers
+Ensures software works across all platforms correctly
+Ensures consistent experience and performance of software all platforms.
+To do this test software should be stable enough
+
+Usability Testing
+----------------
+Software will be evaulated by real users  / customers
+It will reveal the pain points & confusion areas of the software
+It helps to improve the user experience
+It helps you to gather real feedback about the software
+
+Functional vs Non-Functional
+============================
+
+Functional                            
+
+Validates functional aspects of the software
+Based on customer requirements
+Validates the code is doing right thing
+Performs before Non-functionality testing
+
+Non-Functional
+Validate non-functional aspects such as reliability, performance 
+etc
+Based on customer expectations
+Validates the code is doing it right way
+Performs after functionality testing
+Functional Testing
+Non-Functional Testing
+
+How testing will be conducted
+===============================
+
+Functional Testing
+ - Manual
+ - Automation
+
+Non-Functional Testing
+ - Except usability testing, rest of the testings will be conducted using tools.
+
+ Testing Phases
+ =============
+ - Requirements Gathering
+ - Test Planning
+ - Test Case / script development
+ - Enviornment setup
+ - Test Execution
+ - Test Closure

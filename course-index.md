@@ -4,14 +4,15 @@
 
 - What is Testing?
 - What is Software?
+- Types of Softwares
 - What is Software Testing?
 - Why do we need to do Testing?
 - Why the Software has issues?
-- Types of Software Testing?
+- Benefits of Software Testing
+- Types of Software Testing
 - Functional Vs Non-Functional Testing
-- How Functional testing will be conducted?
-- Different Types of Non-functional testing?
-- General view of testing phases
+- How testing will be conducted?
+- Testing phases
 
 ## Module 2: SDLC (Software Development Life Cycle) Concepts
 
