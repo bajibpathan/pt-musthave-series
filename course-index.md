@@ -17,10 +17,9 @@
 ## Module 2: SDLC (Software Development Life Cycle) Concepts
 
 - What is SDLC?
-- Objective of SDLC
-- Different phases of SDLC
-- Different types of SDLC methodologies and their differences?
-- Terminology used in the SDLC methodologies
+- SDLC Benefits
+- SDLC Phases
+- SDLC models
 
 ## Module 3: Server Architecture Basics
 
