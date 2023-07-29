@@ -1,0 +1,90 @@
+Module # 2 
+
+What is SDLC?
+================
+
+Software Development Life Cycle
+Process that produces high-quality software
+Ensures well-tested and ready for production usage
+
+SDLC Benefits
+===============
+
+Reduced development and  production costs
+Reduced software development risks
+Increased Software quality
+Improved customer satisfaction
+
+SDLC Phases
+==============
+
+1) Planning
+2) Requirement Analysis
+3) Design
+4) Implementation
+5) Testing
+6) Deploy
+7) Maintenance
+
+SDLC Models
+============
+1) Waterfall Model
+- Traditional model, also called as Linear model
+- Each new phase depends on the outcome of the previous phase
+Advantages
+----------
+Clearly defined phases and goals
+Requirements will be frozen, and hence less issues
+Suitable for small software development projects
+Disadvantages
+---------------
+Little or no room for change
+Longer delivery time.
+No feedback path until the end of the project
+
+2) Spiral Model
+Combines the iterative model's small repeated cycles with the waterfall model approach
+Product released after completion of each cycle and used as a base for the next cycle
+Advantages
+-----------
+Fast development
+Flexibility in requirements
+suitable for large and complex projects that require frequent changes
+
+Disadvantages
+--------------
+Difficulty in time management
+Expensive for smaller projects with a limited scope
+End date of the project unknown in the early stages
+
+3) V Model
+An extension of Waterfall model where the model execution process flows in a "V-shape"
+Each phase of the development has its corresponding testing phase
+Advantages
+----------
+Best suitable for small projects
+Simple, easy to understand and use
+More disciplined model , Phases completed one at a time.
+Disadvantages
+-------------
+Not suitable for large projects
+Working software is produced late in the life cycle
+Does not support iteration of phases
+
+4) Agile model
+Agile -"The ability to move quickly and easily"
+Software develops in incremental, rapid cycles
+Work is done in regularly iterated cycles, known as sprints
+End of the sprint, working product will be displayed to customer for feedback
+
+Advantages
+----------
+Realistic approach to software development.
+Promotes teamwork and cross training
+Regular updates, higher client satisfaction
+
+Disadvantages
+-------------
+Less Documentation
+Difficult to estimate overall project effort at the begining
+
