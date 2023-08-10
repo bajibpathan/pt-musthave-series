@@ -23,9 +23,10 @@
 
 ## Module 3: Server Architecture Basics
 
-- What is Architecture
+- Why is it important to learn?
 - What is a Server?
-- Different types of Servers
+- Server Types
+- Physical vs Virtual vs Containers
 - Different types of Application layers
 - Types of Server Architecture
   - 2 Tier

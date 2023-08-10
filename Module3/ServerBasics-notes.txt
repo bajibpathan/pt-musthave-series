@@ -1,0 +1,84 @@
+What is a Server?
+======================
+
+A server is a computer system (combination of hardware & software) that provides the service to other computer systems.  
+
+Services provided by the server:
+ - File Services
+ - Print Services
+ - Email Services
+ - Data Management Services and may more
+
+Desktop Limitations:
+ - Intended for individual use
+ - Supports only single processor
+ - Run OS designed for individual use
+ - Not designed for continuous operation
+ - Not able to handle large number of concurrent connections or tasks.
+
+Server Types
+=======================
+Type of service that it provides determine its type
+
+File Server:
+ - Storing and managing files
+ - Allow them to remotely access the files
+ - Provides centralized file storage
+
+Web Server:
+ - Host websites
+ - Serve web pages  through user web browser
+ - Handle HTTP requests and responses
+
+Application Server:
+ - Host and execute applications or software programs
+ - Provides services like application logic processing, transaction & session management
+
+Database Server:
+ - To store and organize data
+ - Allow users and applications to query the stored data
+ - Backing up the data regularly and recovering it in case of data loss
+
+Mail Server:
+ - Stores incoming emails for each user
+ - Handling tasks such as sending, receiving, and storing emails for users
+
+DNS Server:
+ - Translate human-readable domain names into IP addresses
+ - Cache the results of previous queries to improve efficiency
+
+
+Physical vs VM vs Container
+============================
+
+Physical Server:
+Physical servers are also called Bare metal servers. 
+
+Benefits
+ - Not effected by noisy neighbour problem
+ - Provides highest-level of Security
+
+Drawbacks
+ - Expensive, hard to manage
+
+Virtual Machines:
+
+It is a virtual environment that functions as a virtual computer system with its own CPU, memory, network interface, and storage, created on a physical hardware system. It is also called as VM.
+
+Benefits
+ - Cheaper to run
+ - Higher resource utilization
+
+Drawbacks
+ - Vulnerable to the noisy neighbour problem
+ - Vulenerable to the security attacks
+
+Container:
+A container is a lightweight and standalone package of an application with all its dependencies like libraries, framework and it's run-time.
+
+Benefits
+ - Required less hardware resource to run
+ - Easy to deploy and maintain
+
+Drawbacks
+ - Less Secure
