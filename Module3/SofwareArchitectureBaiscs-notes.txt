@@ -1,0 +1,113 @@
+What is Architecture?
+=====================
+It is the art and technique of designing or building something that is well-suited for its purpose.
+
+What is Software Architecture?
+==============================
+
+It is also a technique of designing software that is well-suited for its purpose.
+
+Application Layers
+==================
+Presentation Layer
+Business Logic Layer
+Data Layer
+
+
+Software Architecture Patterns
+==============================
+Pattern to organize the software components in software architecture
+
+Monolithic Architecture
+
+All the layers will be organized in a single instance.
+
+Advantages
+-----------
+Easy to develop, deploy, debug and test
+Low Complexity
+Best fit for simple applications
+
+Disadvantages
+-------------
+Hard to Scale
+Tight Coupling
+Lack of flexibility
+
+
+Multitier Architecture
+In this architecture there will be multiple tiers and layers will be organized in each tier.
+
+Types
+2-Tier (Thick client and Thin Client)
+3-Tier
+N-Tier
+
+Advantages
+----------
+Easy to develop, deploy, debug and test
+Improved Scalability
+Enhanced Security
+
+Disadvantages
+-------------
+Slow Performance
+Expensive as every tier will have its own hardware cost
+
+
+Microservices Architecture
+
+In the architecture pattern, the application is built as a suite of Microservices.
+
+Microservice is a small independent service that communicates over well defined APIs
+
+Advantages
+----------
+Faster development and resuable code
+High Scalability
+Resistance to failure
+
+Disadvantages
+-------------
+Increases complexity
+Data consistency
+Increases network latency
+
+
+Event Driven Architecture
+In this type of pattern there will be 3 main components
+Producer
+ - Produces the events
+Event Broker
+ - Receives the events from producer and shared with the subscribers
+Consumer
+ - Consumes the event from event broker
+
+Advantages
+----------
+Decoupling
+Avoids single point of failure
+Flexible scaling
+
+Disadvantages
+--------------
+Slow Performance
+Eventual consistency
+
+
+Serverless Architecture
+
+
+Serverless doesn't mean that there are no servers. The teams don't need to care about the servers. That means they don't need configure or manage them.
+
+Advantages
+----------
+Cost reduction
+High scalability
+Increases productivity
+
+Disadvantages
+-------------
+Loss of Control
+Security issues  
+

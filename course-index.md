@@ -27,13 +27,18 @@
 - What is a Server?
 - Server Types
 - Physical vs Virtual vs Containers
-- Different types of Application layers
-- Types of Server Architecture
-  - 2 Tier
-  - 3 Tier
-  - N-Tier
-- Different types of Applictaion Softwares
-- Serverless Architecture
+- What is Architecture?
+- What is Software Architecture?
+- Application Layers
+  - Presentation Layer
+  - Business Logic Layer
+  - Data Layer
+- Software Architecture Patterns
+  - Monolithic Architecture
+  - Multitier Architecture
+  - Microservices Architecture
+  - Event-driven Architecture
+  - Serverless Archietcture
 - What is Protocol?
 
 ## Module 4: Performance Testing Core Concepts
