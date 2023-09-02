@@ -1,0 +1,112 @@
+Know Your Servers
+=================
+In performance testing, both software and hardware configurations are essential factors.
+
+Hardware
+--------
+CPU
+ - Architecture
+ - Number of cores
+ - Clock speed etc
+Memory
+Storage
+ - Type of Storage
+ 	SSD(Solid Stae Drives)
+ 	HDD(Hard Disk Drive)
+ 	RAID (Redudant Array of Independent Disks)
+ 	  RAID 0
+ 	  RAID 1
+ 	  RAID 5
+ 	  RAID 10
+Networking
+ - Bandwidth
+ - Latency
+ - Throughput
+
+Software
+---------
+Operating System
+  - RHEL 7 /8 /9
+  - Windows Server 2012/2019/2022
+Software Name
+  - Web Server
+     - Apache HTTP Server
+     - NGNIX
+     - Microsoft IIS
+     - Apache Tomcat
+  - Application Server
+    - IBM Websphere
+    - WebLogic
+    - JBoss
+  - Database Servers
+    - Oracle
+    - SQL Server
+    - IBM DB2
+    - MySQL
+ Software Version
+   - Reasons for different versions
+     - Bug fixes  / Improvement
+	 - Feature Enhancements
+	 - Security Updates
+	 - Performance Optimization
+	 - Market Competition
+
+Environments
+============
+
+A collection of hardware and software tools that team will  use to build software systems
+
+Development Environment
+Testing Environment
+	- SIT Environment
+	- UAT Environment
+	- Performance Testing Environment
+PreProd / Staging Environment
+Production Environment
+
+What is a Protocol?
+====================
+A set of rules that determine how data is transmitted between different devices across a network to exchange information easily and safely.
+Communication Protocols
+ Determines formats and rules for data transfer
+	- HTTP
+	- TCP
+	- UDP
+	- IRC
+	- FTP
+	- SMTP
+Management Protocols
+ Used to troubleshoot the connectivity problems
+	- SNMP
+	- ICMP
+Security Protocols
+ Uses encryption in order to keep the data secure
+ 	- HTTPS
+ 	- SFTP
+ 	- SSL
+
+Other Architecture Components
+=============================
+CDN (Content Delivery Network)
+	 A CDN is a geographically distributed group of servers that caches content close to end users
+	 Akamai, Amazon CDN, Azure CDN, CloudFare 
+Proxy
+	A proxy is an intermediate server that acts as a gateway between the client and the server.
+	Reverse Proxy, Forward Proxy
+Firewall
+	A firewall is a network security device or software application that acts as a barrier between a trusted internal network and untrusted external networks, such as the Internet.
+Load Balancer
+	A load balancer acts as the “traffic police” sitting in front of your servers and routing client requests across all servers capable of fulfilling those requests
+
+
+URL and it's components
+========================
+URL - Uniform Resource Locator
+http://www.example.com:80/path/to/myfile.html
+
+http -> Scheme
+www.example.com -> Domain Name
+80 -> Port
+/path/to/ -> Path to file
+myfile.html -> Resource
+

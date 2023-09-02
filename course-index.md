@@ -39,7 +39,24 @@
   - Microservices Architecture
   - Event-driven Architecture
   - Serverless Archietcture
-- What is Protocol?
+- Know your servers
+  - Hardware
+  - Software
+- Environments
+  - Development Environment
+  - Testing Environment
+  - Preprod / Staging Environment
+  - Production Environment
+- What is a Protocol?
+  - Communication Protocols
+  - Management Protocols
+  - Security Protocols
+- Other Architecture Components
+  - CDN (Content Delivery Network)
+  - Proxy
+  - Firewall
+  - Load Balancer
+- URL and its components
 
 ## Module 4: Performance Testing Core Concepts
 
