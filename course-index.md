@@ -61,9 +61,10 @@
 ## Module 4: Performance Testing Core Concepts
 
 - What is Performance Testing
-- Why do we need to Performance Testing?
-- When do we need to do?
-- Can we do Manual Performance Testing?
+- Why do we need it?
+- When do we need to do it?
+- Performance Testing Benefits
+- Can we do it manually??
 - Types of Performance Testing
 - PTLC
 - Performance Testing Phases and important activities

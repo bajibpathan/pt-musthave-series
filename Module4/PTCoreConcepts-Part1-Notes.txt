@@ -1,0 +1,36 @@
+What is Performance Testing?
+============================
+It is a type of Non-functional testing that focuses on evaluating the speed, stability, and scalability of a software application or system under various conditions in a production-like environment.
+
+Why do we need it?
+==================
+- More than 10 years ago, Amazon found that every 100ms of latency cost them 1% in sales.
+- In 2006, extra .5 second search page generation time cost 20% traffic drop.
+- 70% of mobile app users will abandon the app if it is taking too long to load.
+- 53% of users will leave the site if it takes more than 3 seconds.
+- Customers will look for competitive applications, if your application is less interactive.
+- Performance considered as crucial
+
+When do we need to do it?
+=========================
+
+- In past, it was done few days or weeks before go-live
+- You don’t need to wait for the entire application to be ready or the functionality testing is 100% complete. As much as possible, early performance testing can be planned
+- A Single user test / APIs / Individual Micro Services
+- Take a proactive approach rather than a reactive one
+
+
+Performance Testing Benefits
+============================
+
+- Ensure that the application delivers a responsive and seamless user experience.
+- Reducing the cost and effort of fixing the issues after deployment by identifying the issues early,
+- Identify the problems before the users do.
+- Increased user retention and potential revenue growth.
+- Deploy the applications with confidence.
+
+Can we do it manually?
+======================
+
+Even though, there would be some amount of concurrent load, it is not possible to reproduce the exact the same situation again. The load created on the system might have differences every time we attempt to do it manually.
+Therefore, we need sophisticated performance testing tools like Micro Focus LoadRunner and Apache JMeter, etc. 
