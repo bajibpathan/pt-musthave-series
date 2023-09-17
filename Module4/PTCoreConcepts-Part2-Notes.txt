@@ -1,0 +1,156 @@
+What is Entry Criteria?
+=======================
+The conditions that must be met before you can start something
+
+
+What is Exit Criteria?
+======================
+The conditions that must be met before you can complete something
+
+
+What is a deliverable?
+======================
+The output you expect to have at the end of your phase / activity
+
+
+Performance Testing Life Cycle (PTLC)
+=====================================
+Phases
+-------
+1) Study & Gathering
+2) Planning
+3) Preparation
+4) Execution
+5) Analysis
+6) Reporting
+
+
+1) Study & Gathering
+--------------------
+
+Entry Criteria: Project Intake Approval
+
+Conducted by: Test Manager / Test Laed
+
+Activities:
+- Gather project stakeholders information
+- Understand application architecture
+- Understand the application changes
+- Gather Non-functional requirements (NFR)
+- Conduct tool feasibility analysis (POC - Proof Of Concept)
+- Gather Performance Test  & Production environment details
+
+Deliverable(s): 
+- Tool feasibiliity Report
+- NFR Document
+
+Exit Criteria: Signed off NFR Document
+
+
+2) Planning
+-----------
+
+Entry Criteria: Signed off NFR Document
+
+Conducted by: Test Manager / Test Laed
+
+Activities:
+- Effort estimation and resource allocation
+- Identify performance test objectives
+- Understand the Business process flows, and test data requirements
+- Develop workload model
+- Finalize the monitoring plan
+- Define Risks and Mitigations
+- Develop Performance Test plan / Strategy
+
+Deliverable(s): 
+- Effort Estimation
+- Workload Model
+- Performance Test Plan / Strategy
+
+Exit Criteria: Signed off Performance Test plan / Stratgey
+
+
+3) Preparation
+--------------
+
+Entry Criteria: Signed off Performance Test plan  / Strategy
+
+Conducted by: Test Analyst
+
+Activities:
+- Setup / Install performance testing tool
+- Develop test scripts for each business flow
+- Gather / Prepare test data for each business flow
+- Perform sanity check to validate test scripts, data and environment
+- Capture application / Infrasture resource utilizations using monitoring tools
+- Create Test Scenarios for load tests
+
+Deliverable(s): 
+- Test Scripts
+- Test Scearnios
+
+Exit Criteria: Test Scripts / Data / Environment ready
+
+4) Execution
+------------
+
+Entry Criteria: Test Environment /Scripts / Data readiness
+
+Conducted by: Test Analyst
+
+Activities:
+
+- Execute planned load tests
+- Monitor the test executions
+- Gather Performance Test Metrics
+- Gather Infrastructure resource consumption
+- Gather logs from tools / servers
+
+Deliverable(s): 
+- Test Results
+- Infrastructure resoure reports
+
+Exit Criteria: Test Results / Resource metrics /logs
+
+5) Analysis
+-----------
+
+Entry Criteria: Test Results / Resource metrics /logs
+
+Conducted by: Test Analyst / Test Engineer
+
+Activities:
+
+- Analyze the results
+- Analyze Infrastructure monitoring data
+- Identify any performance deviations & perform root cause analysis
+- Plan for tunning tests (if required)
+- Prepare Interim test results with findings
+
+Deliverable(s): 
+- Interim Test Results
+
+Exit Criteria: Completion of planned tests & Interim test results report
+
+6) Reporting
+-------------
+
+Entry Criteria: Completion of planned tests / Interim test results report
+
+Conducted by: Test Analyst / Test Lead
+
+Activities:
+
+- Observations and recommendations
+- Comparison of test results
+- Establish baseline / benchmark
+- Final Test Report Preparation
+- Log the outstanding performance issues
+- Upload the test artifacts
+
+
+Deliverable(s): 
+- Performance Test Final Report
+
+Exit Criteria: Signed off Performance test final report

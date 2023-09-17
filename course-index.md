@@ -60,13 +60,15 @@
 
 ## Module 4: Performance Testing Core Concepts
 
-- What is Performance Testing
+- What is Performance Testing?
 - Why do we need it?
 - When do we need to do it?
 - Performance Testing Benefits
-- Can we do it manually??
+- Can we do it manually?
+- What is an Entry & Exit Crtiera?
+- What is a deliverable?
+- Performance Testing Life Cycle(PTLC)
 - Types of Performance Testing
-- PTLC
 - Performance Testing Phases and important activities
 - What is SLA?
 - Performance testing requirements
