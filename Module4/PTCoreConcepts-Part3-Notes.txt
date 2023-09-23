@@ -1,0 +1,74 @@
+What is SLA?
+============
+It is a formal agreement between a service provider and its customers that defines the level of service that can be expected from the service provider.
+
+SLA Purposes
+------------
+Customer Expectations
+Accountability
+Monitoring
+Dispute Resolution
+
+What is a Requirement?
+======================
+
+It  is a documented statement that describes a specific feature, or characteristic that a software system must have to meet the needs of its clients.
+
+Functional Requirements (FRs) - What should the system do?
+Non-Functional Requirements (NFRs) - How well should the system do it?
+
+Functional Requirements (FRs) examples:
+---------------------------------------
+The system shall allow users to log in using a username and password.
+Users should be able to add items to their shopping cart.
+
+Non-Functional Requirements (NFRs) examples:
+---------------------------------------------
+The system must have a response time of less than 2 seconds for 95% of user requests.
+The system should be available 99.9% of the time
+
+
+Performance Testing NFRs
+========================
+ - Avoid “Abstract / high-level“ requirements
+ - Always gather “Quantitative“ requirements
+
+Frequently gathered different types of Performance NFRs:
+
+- Response Time
+- Throughput
+- Concurrency
+- Scalability
+- Resource Utilization
+- Geographic Considerations
+
+
+
+What requirements should we gather?
+===================================
+
+- Response Time
+- Throughput
+- Concurrency
+- Scalability
+- Resource Utilization
+- Geographic Considerations
+- Buisness flows / use cases
+- Environment information (Produciton & Testing)
+- External Dependencies  / 3rd Party Integrations
+
+Service virtualization tools:
+- CA Lisa
+- MountBank
+- Hoverfly Cloud
+
+Requirements gathering challenges
+==================================
+- Incomplete / Conceptual Requirements
+- Missing Stakeholder Involvement
+- Changing Expecations
+- Lack of Baselines
+- Lack of Performance Testing Expertise
+- Inadequate Data
+- Incomplete System Knowledge
+

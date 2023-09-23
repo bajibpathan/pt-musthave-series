@@ -71,7 +71,10 @@
 - Types of Performance Testing
 - Performance Testing Phases and important activities
 - What is SLA?
-- Performance testing requirements
+- What is a Requirement?
+- Performance Testing NFRs
+- What requirements should we gather?
+- Requirements gathering challenges
 - How to choose the right scenarios for performance testing?
 - Workload modeling
   - New Applications
