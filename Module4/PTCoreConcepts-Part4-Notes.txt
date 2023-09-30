@@ -1,0 +1,64 @@
+How to choose right business flows for PT?
+==========================================
+In performance testing there is no concept of 100% functional coverage of the application.
+
+Pareto’s Principle
+-----------------
+
+Roughly 80% of consequences come from 20% of causes
+
+In Performance testing, Pareto's principle can be interpretted as 80% of the performance issues are caused by  20% of its use cases.
+
+Criterias for Business use cases
+- Frequently executed
+- Business critical
+- Resource Intensive
+
+Workload model
+==================
+Workload can be defined as all types  of inputs from users to the system.
+
+Types:
+
+Real workload
+--------------
+ These are the actual inputs from reals users in Productoin environment.
+
+Synthentic workload
+-------------------
+ These are the inputs from performance testing tools based out of real inputs from the production environment.
+
+Applications:
+
+New Application
+---------------
+To develop the workload, we will have discussions with Business users/ analysts / client stakeholders.
+
+Existing Application
+--------------------
+For existing applications, end user traffic pattern analysis will be carried out. It can be done in two ways
+
+Web Analytics tools
+--------------------
+These tools will collect data on
+ - how users arrive at the application
+ - What they do once they’re there
+Examples: Google Analytics & Adobe Analytics
+
+Web log analysis
+-----------------
+Here, the team will gather the  logs from the web servers
+Examples of webservers: Apache HTTP server, NGINX, Apache Tomcat, IIS
+
+Log analysis can done using analysis using log analyzer tools like Data Dog, Splunk and Elastic Search.
+
+
+What type of data need to gathered?
+-----------------------------------
+- Number of visits vs unique visits
+- Peak user traffic (monthly/daily / hourly)
+- Peak user requests (monthly/daily / hourly)
+- Most viewed pages
+- HTTP Errors trend (HTTP 500, HTTP 404, HTTP 401 etc)
+- Geographic user distribution data
+- Browsers & OS Used

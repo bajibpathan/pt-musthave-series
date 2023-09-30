@@ -76,7 +76,7 @@
 - What requirements should we gather?
 - Requirements gathering challenges
 - How to choose the right scenarios for performance testing?
-- Workload modeling
+- Workload model
   - New Applications
   - Existing Applications
 - Types of Performance Metrics
