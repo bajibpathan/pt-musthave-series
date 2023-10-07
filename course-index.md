@@ -79,6 +79,16 @@
 - Workload model
   - New Applications
   - Existing Applications
+- Performance Testing Types
+  - Sanity / Dry run
+  - Load test
+  - Endurance / Soak test
+  - Stress test
+  - Spike test
+  - Scalability test
+  - Volume test
+- Baseline vs Benchmark tests
+- How to choose right type of test?
 - Types of Performance Metrics
 - Commonly used Terminology
 

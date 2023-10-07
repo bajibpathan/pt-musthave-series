@@ -1,0 +1,110 @@
+Performance Testing Types
+=========================
+In any performance testing type, the main two factors that will differentiate each test type is  "Number of virtual users and the test duration."
+
+Ramp-up
+--------
+It is the gradual increase in the number of virtual users over a specified period.
+
+Steady State
+------------
+It is the phase in a performance test where the system operates under a constant and consistent load.
+
+Ramp-down
+---------
+It is the gradual decrease in the number of virtual users over a specified period, following the steady state phase.
+
+
+Sanity / Dry run
+----------------
+Objective: Determines the test scripts, data, environment readiness.
+Foucs: Idenitfying the issues related to scripts, data and environment configurations.
+
+Load: 10% of peak load
+Duration: 15~30 minutes (Steady State) + Ramp-up and Ramp-down duration
+
+
+Load test
+---------
+Objective: Determines the system's behavior under a specific expected load.
+Foucs: Assessing response times, throughput rates, and resource utilization under anticipated user load levels.
+
+Load: 25%, 50%, 75%, 100% of peak load
+Duration: 1 ~ 2 hours (Steady State) + Ramp-up and Ramp-down duration
+
+
+Endurance / Soak test
+---------------------
+Objective: Determines system performance over an extended period.
+Foucs: Detecting memory leaks and gradual performance degradation over time.
+
+Load: 70% of peak load or application average load
+Duration: 8 ~ 12 hours (Steady State) + Ramp-up and Ramp-down duration
+
+
+Stress test
+------------
+Objective: Evaluates the system's performance by pushing it beyond its normal operational capacity.
+Foucs: Identifying breaking points, understanding how the system fails, and observing recovery procedures.
+
+Load: Beyond 100% peak load
+Duration: more than 2 hours(Steady State) + Ramp-up and Ramp-down duration
+
+
+Spike test
+----------
+Objective: Assesses the system's ability to handle sudden, rapid increases in load.
+Foucs: Observing how the system copes with abrupt spikes in user activity.
+
+Load: 100% of peak load with spikes
+Duration: 1 ~ 2 hours (Steady State) + Ramp-up and Ramp-down duration
+
+
+Scalability test
+----------------
+Objective: Measures the system's ability to scale up or down in terms of user load or other factors.
+Foucs: Assessing performance as additional resources (such as CPU, memory, or network) are added or removed.
+
+Load: 10~20% of additional peak load
+Duration: 1 ~ 2 hours (Steady State) + Ramp-up and Ramp-down duration
+
+
+Volume test
+-----------
+Objective: Evaluates the system's performance under a large volume of data.
+Foucs: Checking database handling capabilities, response times, and resource usage as the dataset grows.
+
+Load: 100% of peak load
+Duration: 1 ~ 2 hours (Steady State) + Ramp-up and Ramp-down duration
+
+
+Benchmark vs Baseline
+======================
+
+Benchmark: Industry standards or competitors applications performance
+Baseline: Providing a standard for future comparisons within the same system
+
+When will we conduct Baseline?
+
+ - When there are no clear SLAs
+ - During System version upgrades
+
+Note: Typically Conducted under standard operating conditions, representing a typical user load and behavior.
+
+
+How to choose right type of test?
+==================================
+- Not mandatory to conduct all the testing types
+- Should be decided based on the Performance  goals and objectives
+
+Note: Types of tests executed should be frozen in as part of performance test plan
+
+Execution Order:
+-----------------
+Sanity / Dry run  (Mandatory)
+Load test (Mandatory)
+Endurance / Soak test (Mandatory)
+Stress test (Optional)
+Spike test (Optional)
+Scalability test (Optional)
+Volume test (Optional)
