@@ -1,0 +1,84 @@
+Types of Performance Metrics
+=============================
+
+A metric is a quantitative measure used to assess various aspects of an application's performance. 
+
+
+Application Health Metrics
+--------------------------
+- Response Time
+- Throughput
+- Error rate
+
+ These metrics reported by performance testing tools like LoadRunner, JMeter etc
+
+
+Server Health Metrics
+----------------------
+- CPU / Memory / Disk utilizations
+
+We have separate monitoring tools to gather server health metrics.
+
+
+Perfomance Testing vs Performance Engineering
+=============================================
+
+Performance Testing - Identifying the issues
+Performance Engineering - Identifying & eliminating the issues
+
+
+Little Law
+=========
+
+Little’s Law states that the average number of items within a system equals the average arrival rate of items into and out of the system multiplied by the average amount of time an item spends in the system. 
+
+L = λ * W
+L = Average number of customers in a system
+λ = Average items arrival rate
+W = Average time a customer spends in the system
+
+
+Benefits
+---------
+Improved efficiency 
+Better customer service 
+Improved resource utilization
+
+
+In Performance Testing
+
+N = X * Z
+
+N = Average number of users in a system
+X = Throughput (TPS)
+Z = Execution Time (Response Time + Think Time + Pacing)
+
+Little's Law purposes in Performance testing
+Performance test results validation
+Workload Modeling
+
+Common Terminologies
+=====================
+- Virtual Users
+  They are created by load testing tools like LoadRunner JMeter to simulate the real user behavior
+- Simultaneous Users
+  Simultaneous users will execute the same activity at the same time.
+- Concurrent Users
+  Concurrent users are active in the system. However, they will not test the same activity at the same time.
+- Think Time
+  A time gap between two transactions.
+- Iteration
+  Iteration in performance testing refers to a single execution of different transactions in the business use case from beginning to end.
+- Pacing
+  A time gap between two iterations.
+- Response Time
+  Response time is the entire duration from when a request leaves the user's computer, travels to the server, undergoes processing, and returns with the response to the client.
+- Hits 
+  The number of requests or transactions made to the server within a specified period.
+- Throughput
+  The rate at which a system can process a specific number of requests or transactions within a given time frame. 
+- Bottleneck 
+  A bottleneck refers to a point in the system where its performance is significantly degraded.
+  Types:
+  Software Bottlenecks and Hardware Bottlenecks
+  

@@ -68,7 +68,6 @@
 - What is an Entry & Exit Crtiera?
 - What is a deliverable?
 - Performance Testing Life Cycle(PTLC)
-- Types of Performance Testing
 - Performance Testing Phases and important activities
 - What is SLA?
 - What is a Requirement?
@@ -90,7 +89,19 @@
 - Baseline vs Benchmark tests
 - How to choose right type of test?
 - Types of Performance Metrics
-- Commonly used Terminology
+- Performance Testing vs Performance Engineering
+- Little's Law
+- Common Terminology
+  - Virtual Users
+  - Simultaneous Users
+  - Concurrent Users
+  - Think Time
+  - Iteration
+  - Pacing
+  - Response Time
+  - Hits
+  - Throughput
+  - Bottleneck
 
 ## Module 5: Programming Language Concepts
 
