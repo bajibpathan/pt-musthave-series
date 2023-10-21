@@ -102,6 +102,7 @@
   - Hits
   - Throughput
   - Bottleneck
+- Common asked Interview questions
 
 ## Module 5: Programming Language Concepts
 

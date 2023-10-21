@@ -1,0 +1,193 @@
+Things To Do Beforehand for any job interview
+=============================================
+Know about yourself to the fullest might help.
+Knowing how to overcome your nervousness might help a lot.
+Find out about possible questions that might appear as well as possible answers.
+Make sure that you understand how to explain or describe every single point inside your resume.
+
+==========================
+Question 1: About yourself
+
+Key Points:
+ - Name 
+ - Your latest education
+ - Your experiences as well as 
+ - Your achievements (if any)
+
+Sample Answer:
+My name is [Your Name], and I hold a degree in [Your Degree] from [Your University or College]. I have been working in performance testing for [Number of Years] years. I am extremely passionate about ensuring that software applications not only function correctly but also perform exceptionally under various conditions.  Throughout my career, I have worked on a variety of projects, on different  applications 
+I am well-versed in performance testing best practices, including test planning, scripting, execution, and analysis. I have a deep understanding of various performance testing types such as load testing, endurance testing, and stress testing. Additionally, I am experienced in analyzing performance metrics and generating detailed reports to help development and operation teams understand the system behavior under different loads.
+Apart from technical skills, I believe that effective communication is key in performance testing. I have experience collaborating closely with development, QA, and operations teams to implement performance optimizations and ensure the delivery of high-quality, high-performing applications.
+I am enthusiastic about staying updated with the latest trends and technologies in the performance testing domain.
+==========================
+Question 2: Tell me your roles & responsibilities
+            Explain PTLC & its phases
+            Explain Performance testing process in your previous organization
+
+Key Points:
+Remember the PTLC phases and explain the different activities carried out in each phase.
+To simply, you can divide PTLC into 4 phases (Planning, Preparation, Execution & Analysis)
+Try to follow the same order of PTLC Phase
+Refer EP 9
+
+Sample Answer:
+Planning
+--------
+Requirements gathering
+  - understanding application changes
+  - understanding application architecture
+  - Understanding critical business use cases
+  - Understanding workload characteristics
+  - Understanding test data requirements
+Estimating the effort required for Performance testing
+Test plan preparation
+Review Test plan with client stakeholders
+Obtain sign-off
+
+Preparation
+-----------
+Developing the scripts
+Test data creation
+Test scenarios creations
+Validating the application and infrastructure monitoring
+Performing Sanity test
+
+Execution
+----------
+Executing the planned tests
+ - Peak load
+ - Endurance / Soak
+ - Scalability tests
+Gathering application health and Infrastructure health metrics
+Preparing Interim test results
+
+Analysis
+---------
+Comparison of the test results
+Following up with support teams for tuning activities
+Test report preparation with observations and recommendations
+
+Try to explain each activity in 1 or 2 sentences. Don’t jump between phases. Share it a like a story.
+==========================
+Question 3: How to gather NFRs in performance testing
+
+Key Points:
+Remember these points and try to explain 1 or 2 sentences
+Scheduling meetings with business teams
+Review Technical documentation & NFRs
+Historical data analysis
+Review previous test results/baseline results 
+
+Try to provide high-level explanation for each point
+Refer EP 10
+
+Sample Anwer:
+First, we will schedule meetings with business stakeholders to understand their expectations. 
+We will gather all the technical documents including Non-functional requirement documents to understand the application and its non-functional requirements. 
+If the application is already in Production, we will gather the production metrics to understand existing workload usage. 
+We will review the previous baseline or release test results to understand if there are any deviations from the production metrics.
+Once the requirements have been gathered, we will set up a meeting with the business team to ensure that there are no discrepancies.
+==========================
+Question 4: If the client doesn't know anything about PT, what is the approach to gather requirements
+
+Key Points:
+Educate the Client
+Ask Open-Ended Questions and provide examples
+
+Try to provide high-level explanation for each point
+
+Sample Answer:
+We will try to educate the client by explaining the importance of performance testing and its impact on the success of the application. 
+We will ask open-ended questions to encourage the client to express their concerns or expectations. For example, we will ask about their anticipated user load, response time expectation, and critical functionalities of the application.
+We will provide some examples of performance metrics like response time, throughput, and error rates.
+After all the discussions, we will document and review with the client.
+==========================
+Question 5: What are the challenges that you have faced while gathering NFR? 
+
+Key Points:
+This can be different from company to company or project to project
+Lack of Clarity
+Unrealistic Expectations
+Incomplete Information
+Try to provide high-level explanation for each point
+Refer EP 10
+
+Sample Anwer:
+Most of the times, our clients lack a clear understanding of what metrics are relevant to their application. So, we have educated them and explained the importance of performance testing.
+Sometimes, they come up with some unrealistic expectations about the application's performance like overestimating or underestimating. In such situations, we gathered the production metrics and re-evaluated their expectations with the metrics.
+Sometimes, they don't document their Non-functional requirements about the usage patterns, anticipated user loads, and response time expectations. So, we have scheduled several meetings and gathered all performance-related requirements.
+==========================
+Question 6: How do you identify business use cases for any application?
+
+Key Points:
+Pareto’s Principle (80 / 20)
+frequently used
+highly critical
+high resource intensive
+Refer Episode 11 for more
+
+Smaple Answer:
+If it is an existing application, we always use Pareto's principle to identify business use cases. According to this principle, 20% of the frequently used business use cases cover 80% of the coverage. So, we will gather the use cases from production along with their usage and filter out the 20% use cases.
+
+To filter those 20% use cases, we will follow certain guidelines like
+The use cases should be frequently used
+The use cases that are business critical.
+The use cases that are highly resource-intensive
+
+If it is a brand new application, we will discuss it with the business team and understand the frequently used scenarios, critical business uses cases and high-resource intensive use cases.
+===========================
+Question 7: Explain Test Plan / Strategy document sections
+            Have you developed the test plan/strategy document?
+
+Key Points:
+Remember the different sections of the test plan and explain 1 or 2 points for each section
+
+Test Plan Sections:
+Test Objective
+In scope & out of scope
+Performance NFRs
+Workload used for testing (number of users / TPS etc)
+Performance Testing Process
+Type of tests 
+Entry and exit criteria
+Project milestones/deliverables
+Assumptions
+Risk / Mitigations
+Dependencies
+Environment details
+Monitoring Stratgey
+Defect tracking process
+Roles & responsibilities
+===========================
+Question 8: Deliverables of different phases
+            Entry & Exit Criteria of different phases
+
+Key Notes:
+Sometimes they may ask you for any specific phase, 
+what are the entry &  exit criteria for the execution phase?
+What are the planning deliverables
+To answer this type of question, you can refer to EP 9 Performance testing core concepts.
+
+Sample Answer:
+Before starting the execution phase, we need to ensure that test scripts, data, and environment are ready.
+To exit from this phase we need to ensure that test results and infrastructure monitoring reports are available.
+===========================
+Question 9: Performance Testing Types & Objectives
+
+Key Notes:
+They may also ask you to talk about different performance testing types and their objectives
+Refer Episode 12
+
+Sample Answer:
+We have different test types available. Based on the requirements, we will recommend and schedule the specific type of test.
+For example, an Endurance / Soak test will be scheduled to identify any stability issues in the application. It also helps us to understand if we have any memory-related problems like memory leaks in the application.
+===========================
+Question 10: Common terminologies related questions
+
+Key Points:
+They may also ask you to explain the difference between think time and pacing ?
+Refer Episode 13
+
+Sample Answer:
+Think time is a time gap between two transactions where as pacing is time gap between two iterations
+===========================
