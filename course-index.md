@@ -106,10 +106,11 @@
 
 ## Module 5: Programming Language Concepts
 
+- Is the Programming knowledge required for Performance Testing?
 - Introduction to Apache Groovy
   - Why Groovy?
-  - History
-  - Features
+  - Features of Grovvy
+- Why do we need to learn Groovy
 - Installation and Setup
 - IDEs Integration with Groovy
 - First Program - Welcome to Groovy

@@ -1,0 +1,36 @@
+Is the programming knowledge required for performance testing?
+=============================================================
+Programming Baiscs are mandatory because to customize performance test scripts.
+	Variables and Data Types, 
+    Operators (Arthimetic, Logical, Relationnal), 
+    Conditional Statements (if..else), 
+    Loops (for, do..while, while), 
+    Error handling and Debugging skills
+
+What is Groovy?
+================
+Groovy is a Java-syntax-comptaible, object-oriented programming language that runs on the Java Virtual Machine (JVM)
+It is a both static and dynamic langague
+
+Features of Groovy
+====================
+- Flat learning curve
+- Smooth Java integration
+- Vibrant and rich ecosystem
+- Supports both static and dynamic typing
+
+Why do we need to learn Groovy?
+===============================
+- Groovy Recommended scripting language for Jmeter because it implements Compilable Interface.
+- In Jmeter scripting will be done using JSR223 Elements.
+
+
+Refernce Links:
+===============
+Apache Wikpedia -> https://en.wikipedia.org/wiki/Apache_Groovy
+Dynamic Programming language reference -> https://en.wikipedia.org/wiki/Dynamic_programming_language#:~:text=In%20computer%20science%2C%20a%20dynamic,programming%20languages%20perform%20during%20compilation.
+Static vs Dynamic languages -> https://www.educative.io/answers/static-vs-dynamic-languages
+Apache Groovy Official website -> https://groovy-lang.org/index.html
+Jmeter Official website for JSR223 elements -> https://jmeter.apache.org/usermanual/best-practices.html#jsr223
+JCP Wikpedia -> https://en.wikipedia.org/wiki/Java_Community_Process
+JCP Official Website (List of JSRs) -> https://www.jcp.org/en/jsr/all
