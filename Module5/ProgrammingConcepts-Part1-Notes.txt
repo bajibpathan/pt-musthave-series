@@ -27,10 +27,10 @@ Why do we need to learn Groovy?
 
 Refernce Links:
 ===============
-Apache Wikpedia -> https://en.wikipedia.org/wiki/Apache_Groovy
+Apache Wikipedia -> https://en.wikipedia.org/wiki/Apache_Groovy
 Dynamic Programming language reference -> https://en.wikipedia.org/wiki/Dynamic_programming_language#:~:text=In%20computer%20science%2C%20a%20dynamic,programming%20languages%20perform%20during%20compilation.
 Static vs Dynamic languages -> https://www.educative.io/answers/static-vs-dynamic-languages
 Apache Groovy Official website -> https://groovy-lang.org/index.html
 Jmeter Official website for JSR223 elements -> https://jmeter.apache.org/usermanual/best-practices.html#jsr223
-JCP Wikpedia -> https://en.wikipedia.org/wiki/Java_Community_Process
+JCP Wikipedia -> https://en.wikipedia.org/wiki/Java_Community_Process
 JCP Official Website (List of JSRs) -> https://www.jcp.org/en/jsr/all
