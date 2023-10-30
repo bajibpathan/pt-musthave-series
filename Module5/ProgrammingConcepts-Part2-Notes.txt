@@ -1,0 +1,218 @@
+How to setup Groovy on MacOs
+============================
+
+Prequisites:
+------------
+Groovy 4.0 requires Java 8+
+
+To check the java version, use the below command on Terminal
+
+$ java --version
+
+If it returns Java version information then that means java is already installed. If it returns nothing, then Java is not installed.
+
+Java official installation instructions:
+https://docs.oracle.com/en/java/javase/21/install/installation-jdk-macos.html#GUID-2FE451B0-9572-4E38-A1A5-568B77B146DE
+
+
+To Install Java, please follow the steps:
+
+Java Installation Steps:
+------------------------
+
+Step->1:
+--------
+
+Open Chrome Broswer and use the below link to go to Java Offical site for downloads
+https://www.oracle.com/ca-en/java/technologies/downloads/
+
+Note: For the first time, it may ask to create account. You can fill the information and create account.
+
+Step->2:
+--------
+Download the Java using the appropriate link
+ARM64 Compressed Archive:
+https://download.oracle.com/java/21/latest/jdk-21_macos-aarch64_bin.tar.gz (sha256)
+
+ARM64 DMG Installer:
+https://download.oracle.com/java/21/latest/jdk-21_macos-aarch64_bin.dmg (sha256)
+
+x64 Compressed Archive:	
+https://download.oracle.com/java/21/latest/jdk-21_macos-x64_bin.tar.gz (sha256)
+
+x64 DMG Installer:	
+https://download.oracle.com/java/21/latest/jdk-21_macos-x64_bin.dmg (sha256)
+
+Step->3:
+--------
+Double click the downloaded installer and follow the instructions.
+
+Step-4:
+-------
+Verify the Java version using the below command
+$ java --version
+
+
+Groovy Installation Steps:
+--------------------------
+Step->1: 
+-------
+Open Chrome Broswer and use the below link to go to Apache Groovy official website installation page.
+
+https://groovy-lang.org/install.html
+
+Step->2: 
+-------
+Go to Section 4.1.2 (Installation on Mac OS X)
+
+Step->3: 
+-------
+
+Copy the Homebrew command and execute it in the termial
+
+Verify the package information
+$ brew info groovy
+
+Install Groovy
+$ brew install groovy
+
+Note: Before executing the command, please make sure HomeBrew installed on Mac. If HomeBrew not installed, you can install by executing the below command on Terminal
+
+Install Homebrew:
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Step->4: 
+-------
+After Groovy Installation, verify Groovy Version, Groovy Shell and Groovy Console using the below commands
+
+To verify the version
+$ groovy --version
+
+To open Groovy Shell
+$ groovysh
+
+To open Groovy Console
+$ groovyConsole 
+
+
+How to setup Groovy on Windows
+===============================
+
+Prequisites:
+------------
+Groovy 4.0 requires Java 8+
+
+To check the java version, use the below command on Command Prompt. 
+Note: Open Run menu using Ctrl + r and type cmd to open Command Prompt.
+
+> java --version
+
+If it returns Java version information then that means java is already installed. If it returns nothing, then Java is not installed.
+
+Java official installation instructions:
+https://docs.oracle.com/en/java/javase/21/install/installation-jdk-microsoft-windows-platforms.html#GUID-A7E27B90-A28D-4237-9383-A58B416071CA
+
+To Install Java, please follow the steps:
+
+Java Installation Steps:
+------------------------
+
+Step->1:
+--------
+
+Open Chrome Broswer and use the below link to go to Java Offical site for downloads
+https://www.oracle.com/ca-en/java/technologies/downloads/
+
+
+Note: For the first time, it may ask to create account. You can fill the information and create account.
+
+Step->2:
+--------
+Download the Java using the appropriate link
+
+x64 Compressed Archive
+https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip (sha256)
+
+x64 Installer	
+https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.exe (sha256)
+
+x64 MSI Installer
+https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.msi (sha256)
+
+Step->3:
+--------
+Double click the downloaded installer and follow the instructions.
+
+Step-4:
+-------
+Verify the Java version using the below command
+$ java --version
+
+
+Groovy Installation Steps:
+--------------------------
+Step->1: 
+-------
+Open Chrome Broswer and use the below link to go to Apache Groovy official website installation page.
+
+https://groovy-lang.org/install.html
+
+Step->2: 
+-------
+Go to Section 4.2 (Installation on Windows)
+
+Step->3: 
+-------
+
+Download the installer using the below link
+
+https://groovy.jfrog.io/ui/native/dist-release-local/groovy-windows-installer/#:~:text=11%3A58%20%2D0400-,groovy%2D4.0.15/,-14%2D09%2D23
+
+Step->4:
+--------
+Double click the Installer and follow the instructions
+
+Step->5: 
+-------
+After Groovy Installation, verify Groovy Version, Groovy Shell and Groovy Console using the below commands
+
+To verify the version
+> groovy --version
+
+To open Groovy Shell
+> groovysh
+
+To open Groovy Console
+> groovyConsole 
+
+
+Integrate Groovy with VSCode IDE (MacOS / Windows):
+================================
+
+Step->:1
+--------
+Go to IDE Integrations page using the below link
+https://groovy-lang.org/ides.html
+
+Step->:2
+--------
+Go to Microsoft Visual Studio code by clicking on VSCode. You can use the below link as well.
+https://groovy-lang.org/ides.html#:~:text=No-,VSCode,-Yes
+
+Step->:3
+--------
+Based on the OS type, download the installer
+
+Step->:4
+--------
+Double click on the downloaded installer.
+
+Step->:5
+--------
+Open Visutal Stuido Code
+
+Step->:6
+--------
+Go to extensions and install code-groovy extensions
+
+

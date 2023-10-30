@@ -111,8 +111,11 @@
   - Why Groovy?
   - Features of Grovvy
 - Why do we need to learn Groovy
-- Installation and Setup
+- How to setup Groovy
+  - macOs
+  - Windows
 - IDEs Integration with Groovy
+  - VS Code
 - First Program - Welcome to Groovy
 - Comments
 - Keywords
