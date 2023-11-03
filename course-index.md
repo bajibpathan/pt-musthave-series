@@ -120,7 +120,7 @@
 - Comments
 - Keywords
 - Variables
-- Strings
+- Data Types
 - Operators
 - Conditional Statements
 - Loops

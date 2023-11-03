@@ -1,0 +1,130 @@
+First Program - Welcome to Groovy
+=================================
+//Java Program
+ public class HelloGroovy {
+      public static void main(String[] args){
+         System.out.println("Welcome to Groovy);
+     }
+ }
+
+
+ In Java, every application begins with a class definition and must contain the main method
+The Java compiler starts executing the code from the main method.It's mandatory in a Java program.
+
+
+//Groovy Prgram
+println "Welcome to Groovy"
+
+To execute Groovy script, the following command can be used
+
+groovy filename
+Example: groovy groovy-part3.groovy.
+
+In Groovy it is not necessary to have a class or the main method.We can print a line without using round brackets. It is not necessary to put a semicolon at the end of the statement like in java.
+
+
+Comments
+========
+A note that give explanation about the code (method, class or any logic etc).
+
+Single-line comment
+-------------------
+
+// a standalone single line comment
+println "Welcome to Groovy" // a comment till the end of the 
+
+
+ Multiline comment
+ -----------------
+/* a standalone multiline comment
+   spanning two lines */
+
+
+ Groovydoc comment
+ -----------------
+/**
+ * A Class description
+ */
+
+
+ Shebang line
+ -------------
+#!/usr/bin/env groovy
+
+
+Keywords
+========
+Keywords are reserved words and we can't use them for defining variable names, method names etc
+
+Reference: https://groovy-lang.org/syntax.html#_keywords
+
+
+Variables
+=========
+
+Variables are storage locations with the assigned names. They hold data that you can change or use later.
+
+It's always important to name them something meaningful.
+
+
+
+Data Types
+==========
+
+Numbers
+-------
+They can be whole numbers (Integers) or decimals (floating values).
+
+byte
+short
+int
+long
+float
+double
+
+byte b = 2
+short s = 3
+int i = 10
+long l = 454544
+float f = 15.35
+double d = 6.78880
+
+Strings
+------
+
+char
+String
+
+char c = 'a'
+String str = "This is a String"
+
+String interpolation
+---------------------
+
+int age = 28
+println "Your age is ${age}"
+println "The sum of 10 and 5 is ${10+5}"
+
+String Concatenation
+---------------------
+println "Your age is " + age
+
+
+Boolean
+-------
+true or false
+boolean t = true
+boolean f = false
+
+
+In Groovy variables are case-senstive.
+
+Dynamic Typing declaation
+=-------------------------
+Groovy is Dynamic typing. So, we don't define the data type during declaration.
+
+def x = 10
+dex str = "This is String"
+
+println x.getClass()
+println str.getClass()
