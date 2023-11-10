@@ -1,0 +1,145 @@
+// Expression
+//It is a valid unit of code that evaulates to a value.
+
+//  1.Assign a value
+// def a = 3
+
+//  2.Evaluate a value
+ // 4 + 3
+
+// Operator
+//In computer programing, is a character or symbol that tell the compiler 
+//to perform specific mathematical or logical manipulations on variables / values. 
+
+//Arthimetic Operators
+//====================
+
+//Binary Operators
+// -------------------
+
+// Addition (+): Adds two numbers
+// Subtraction (-): Subtracts one number from the other
+// Multiplication (*): Multiplies two numbers
+// Division (/): Divides two numbers
+// Remainder (%): Returns the remainder of a division operation
+// Power operator (“**”). Raise to the power
+
+// def num1 = 3
+// def num2 = 2
+
+// println "${num1} + ${num2}  = ${num1 + num2}"
+// println "${num1} - ${num2}  = ${num1 - num2}"
+// println "${num1} * ${num2}  = ${num1 * num2}"
+// println "${num1} / ${num2}  = ${num1 / num2}"
+// // println num1.intdiv(num2)
+// println "${num1} % ${num2}  = ${num1 % num2}"
+// println "${num1} ** ${num2}  = ${num1 ** num2}"
+
+// Unary Operator
+// -----------------
+// They perofrm operations on a single operand or variable
+
+// Plus (+)
+// Negation (-)
+// Increment (++)
+// Decrement (--)
+
+// def a = -3
+// println a
+
+// def a = 5
+// // a = a + 1
+// // a++
+// ++a
+// println a
+
+// def b = 6
+// // println "The value of b is ${++b}" //prefix Increment
+// println "The value of b is ${b++}" //postfix Increment
+// println "The value of b is ${b}"
+
+// def c = 7
+// // println "The value of c is ${--c}"
+// println "The value of c is ${c--}"
+
+// assert
+
+// assert 3 + 2 == 4
+
+//Assignment Operators
+
+// Assignment (=)
+// Addition Assignment (+=)
+// Substraction Assignment(-=)
+// Multiplication Assignment(*=)
+// Division Assignment(/=)
+// Remainder Assignment(%=)
+// Power Assignment(**=)
+
+// def a = 7
+// def a = 8
+// // a = a + 5
+// // a += 5
+// // println a
+// println a += 5
+// println a -= 5
+// println a *= 5
+// println a /= 5
+
+
+//Relational Operators
+//=====================
+// Equal to (==)  Checks if the two values are equal 
+// Not equal to(!=)  Checks if the two values are not equal 
+// Less than (<)   Checks if one value is less than the other
+// Less than or equal to (<=)  Checks if one value is less than or equal to the other
+// Greater than (>) Checks if one value is greater than the other
+// Greater than or equal to (>=)  Checks if one value is greater than or equal to the other
+// assert 3 == 3
+// def a = 10
+// def b = 30
+// assert a == b
+// assert a != b
+// assert a < b
+// assert a <= b
+// assert a > b
+// assert a >= b
+
+
+// //Logical Operators
+// Logical AND (&&): returns true if both operands are true, false otherwise
+// Logical OR (||): returns true if at least one operand is true, false otherwise
+// Logical NOT (!): returns the opposite boolean value as that of the operand
+
+         
+// println "true && false -> ${true && false}"      
+// println "true || false -> ${true || false}"
+// println "!false -> ${!false}"  
+
+// Grouping Operator
+// ( )
+// Controls precedence of evaluation in experssion.
+
+def a = 1
+def b = 2
+def c = 3
+
+// println a + b * c
+
+// println a + (b * c)
+
+// 1 + 2 * 3
+// 1 + 6
+// 7
+
+// println "${(a + b) * c}"
+
+
+// (1 + 2) * 3
+// 3 * 3
+// 9
+
+// Conditional Operators
+
+// Ternary Operator
+// Elivs Operator
