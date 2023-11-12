@@ -121,3 +121,23 @@
 //     println "This string is empty"
 // }
 
+
+
+Practice If..else questions: 
+============================
+1. Write a program that converts temperatures between Celsius and Fahrenheit. The program should ask the user to input a temperature and the scale (C or F) and then output the converted temperature.
+2. Write a program that takes a student's score as input and prints out their grade. Use the following grading scale:
+A: 90-100
+B: 80-89
+C: 70-79
+D: 60-69
+F: 0-59
+
+3.Write a program that takes two numbers as input and prints out the larger number.
+4. Write a program that checks whether a given year is a leap year. A leap year is either divisible by 4 but not by 100, or divisible by 400.
+
+Practice Switch case questions:
+===============================
+1. Write a program that takes an integer representing a month (1 for January, 2 for February, etc.) and prints the name of the month.
+2.Write a program that takes two numbers and an operator (+, -, *, /) as input and performs the corresponding operation using a switch statement.
+3.Write a program that takes an integer representing the color of a traffic light (1 for Red, 2 for Yellow, 3 for Green) and prints the action a driver should take.
