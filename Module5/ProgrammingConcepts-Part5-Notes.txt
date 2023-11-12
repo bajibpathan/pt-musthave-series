@@ -1,0 +1,123 @@
+// Control Structures
+//Control structures are used to manage the flow of execution in a program
+
+//Conditional structures
+//Loop structures
+//Exception handling structures
+
+
+//Conditionl Structures
+// Control the flow of program based on certain conditions.
+
+//If...else
+//switch...case
+
+//If...else
+
+
+// Syntax
+// if (condition) {
+//     // Code to execute if the condition is true
+// } else {
+//     // Code to execute if the condition is false
+// }
+
+// Give number is a positive or negative
+
+// def num = 0
+
+// if (num > 0) {
+//     println "The given ${num} is postive"
+// } else {
+//     println "The given ${num} is negative"
+// }
+
+// Syntax
+// if (condition) {
+//     // Code to execute if the 1st condition is true
+// } else if (condition) {
+//     // Code to execute if the 2nd condition is true
+// } else {
+//     // Code to execute if the condition is false
+// }
+
+// def num = -10
+
+// if (num > 0) {
+//     println "The given number ${num} is postive"
+// } else if (num < 0) {
+//     println "The given number ${num} is negative"
+// } else {
+//     println "The given number is zero"
+// }
+
+// Conditional Operators
+
+//Tenrary Operator
+//is a concise way to express conditional logic 
+
+// Syntax
+// condition ? expressionIfTrue : expressionIfFalse
+
+// def x = 10
+// def result
+
+// if (x > 5){
+//     result = "Greater than 5"
+// }else {
+//     result = "Less than or equal to 5"
+// }
+// println result
+
+// def x = 3
+// def result
+
+// result = (x > 5) ? "Greater than 5" : "Less than or equal to 5"
+// println result
+
+// Elvis Operator
+
+// Syntax
+// variable = expression ?: defaultValue
+
+// def sampleText = "Sample Value"
+// def elivsOutput = sampleText ?: "Default message, Hello Groovy!"
+// println elivsOutput
+
+
+//switch..case
+
+// Syntax
+// def variable = // some value
+
+// switch (variable) {
+//     case value1:
+//         // code to execute if variable equals value1
+//         break
+//     case value2:
+//         // code to execute if variable equals value2
+//         break
+//     // additional cases as needed
+//     default:
+//         // code to execute if none of the cases match
+// }
+
+
+
+//Groovy Truth
+
+
+// Boolean expressions : True if the corresponding Boolean value is true.
+// Collections, Arrays and Maps: Non-empty Collections, arrays and maps are true.
+// Strings: Non-empty Strings are true.
+// Numbers: Non-zero numbers are true.
+// Object References: Non-null object references are coerced to true.
+
+
+// def trutyString
+// if (trutyString) {
+//     println "This string is Not empty."
+// } else {
+//     println "This string is empty"
+// }
+

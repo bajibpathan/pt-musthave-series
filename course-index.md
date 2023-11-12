@@ -122,7 +122,7 @@
 - Variables
 - Data Types
 - Operators
-- Conditional Statements
+- Conditional Structures
 - Loops
 - Methods
 - Lists
