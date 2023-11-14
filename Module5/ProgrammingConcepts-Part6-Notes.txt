@@ -1,0 +1,130 @@
+// Looping Structures
+
+//for loop
+//while loop
+//do while loop
+
+//for loop
+
+// classic for loop
+
+// Syntax:
+// for (initialization; condition; update) {
+//     // code to be executed in each iteration
+// }
+
+// for(def i = 0; i<5; i++){
+//     println "Hello Groovy"
+// }
+
+//Math Table
+// 3 X 1 = 3
+// 3 X 2 = 6
+// .
+// .
+// 3 X 20 = 60
+
+// def num = 18
+// for(def int i = 1; i<=20; i++){
+//     println "${num} X ${i} = ${num * i}"
+// }
+
+//Range Operator
+//..
+
+//1..10 - Inclusive Range
+//1..<10 - Exclusive Range
+//'a'..'z' - Inlcusive Range of characters
+//10..1 - Descending order
+
+// def numbers = 1..10
+
+//contains()
+// println numbers.contains(15)
+
+// get()
+// println numbers.get(0)
+
+//getFrom()
+// println numbers.getFrom()
+
+//getTo()
+// println numbers.getTo()
+
+//size()
+// println numbers.size()
+
+
+//for in loop
+
+
+// for (item in iterable) {
+//     // code to be executed for each item
+// }
+
+// def numbers = 1..10
+// for (def number in numbers){
+//     println number
+// }
+
+
+// def numbers = 5..1
+// for (def number in numbers){
+//     println number
+// }
+
+// def characters = 'z'..'a'
+// for (def character in characters){
+//     print character
+// }
+
+// for each loop (Java)
+// def characters = 'z'..'a'
+// for (def character : characters){
+//     print character
+// }
+
+
+//break
+
+// def numbers = 1..5
+// for (def number in numbers){
+//     if (number == 3)
+//         break
+//     println number
+// }
+
+//continue
+// def numbers = 1..5
+// for (def number in numbers){
+//     if (number == 3)
+//         continue
+//     println number
+// }
+
+//while loop
+
+
+// Syntax
+// while (condition) {
+//     // code to be executed while the condition is true
+// }
+
+// def i = 1
+// while (i<=5){
+//     println i
+//     i++
+// }
+
+//do while loop
+
+// //Syntax
+// do {
+//     // code to be executed
+// } while (condition)
+
+// def i = 1
+// do {
+//     println i
+//     i++
+// } while (i<=5)
