@@ -123,7 +123,8 @@
 - Data Types
 - Operators
 - Conditional Structures
-- Loops
+- Looping Structures
+- Exception Handling Structures
 - Methods
 - Lists
 - Maps
