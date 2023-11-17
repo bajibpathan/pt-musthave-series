@@ -1,0 +1,46 @@
+//Exception
+// abnormal condition or event
+
+//Errors in Code
+//External factors 
+//Invalid Input
+
+// def a = 5, b = 0
+// def result = a / b
+// println result
+
+//try.. catch
+
+// try {
+//     // Code that might throw an exception
+// } catch (ExceptionType e) {
+//     // Handle the exception
+// }
+
+// try {
+//     def a = 5, b = 0
+//     def result = a / b
+//     println result
+// } catch (Exception e){
+//     println "Cannot divide by zero"
+//     println e.printStackTrace()
+// }
+
+//try..catch..finally
+// try {
+//     // Code that might throw an exception
+// } catch (ExceptionType e) {
+//     // Handle the exception
+// } finally {
+//     // Code that executes whether or not an exception occurred
+// }
+
+try {
+    def a = 5, b = 5
+    def result = a / b
+    println result
+} catch (Exception e){
+    println "Cannot divide by zero"
+} finally {
+    println "Execution Completed"
+}
