@@ -1,0 +1,52 @@
+//what is method?
+//a method is a named block of code that performs a specific task
+
+//Benefits
+//Modularity
+//Reauability
+    //DRY (Don't Repeat Yourself)
+//Abstraction
+
+//Built-in Methods
+//User-Defind Methods
+
+//Built-in Methods
+
+// def myString = "Hello Groovy!"
+// println myString.toUpperCase()
+// println myString.toLowerCase()
+
+//User-Defined Methods
+
+//without any parameters and arguments
+// def printGroovy(){
+//     println "Hello Groovy"
+// }
+
+// printGroovy()
+
+// //with parameters and arguments
+// def greet(name){
+//     println "Hello ${name}"
+// }
+
+// // greet("Groovy")
+// greet("Java")
+
+
+//with parameters & arguments and perofrming some operations
+// def sum(a=10 , b=20){
+//     println "Sum: ${a + b}"
+// }
+
+// sum(6)
+
+//with parameters & arguments and perofrming some operations and return the value
+// def sum(a, b){
+//     def total = a + b
+//     return total
+// }
+
+// def result = sum(5, 10)
+// println result
+
