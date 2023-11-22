@@ -126,9 +126,10 @@
 - Looping Structures
 - Exception Handling Structures
 - Methods
-- Lists
-- Maps
-- Ranges
+- Collections
+  - Lists
+  - Maps
+  - Ranges
 - File I/O Operations (Read & Write)
 - Regular Expressions
 

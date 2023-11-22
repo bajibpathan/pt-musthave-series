@@ -1,0 +1,157 @@
+//Groovy Collections
+
+//Lists
+
+//  ____ ____ ____ ___ ___
+// | 2  | 8  | 1  | 4 | 6 |  --> Array Elements
+// |____|____|____|___|___|
+//   0    1    2    3   4    --> Array Indexes
+
+// []
+
+// [2, 8, 1, 4, 6]
+// []
+
+//Creation
+// def list = [2, 8, 1, 4, 6]
+
+//size()
+// println list.size()
+
+//Accessing
+// println list[3]
+// println list.get(2)
+
+//Adding
+
+// list << 6
+// list.leftShift(6)
+// list.add(5)
+// list.add(2,3)
+// list.addAll([5,4])
+// list.addAll(2,[3,5])
+// list << 7 << 'i' << 11
+// list << ['m', 'o']
+
+//Duplicate
+// list = list * 3
+// list = list.multiply(2)
+
+//Remove
+// list.remove(2)
+// list.removeElement(4)
+// print list.removeElement(5)
+// list.clear()
+
+//Modify
+// println list
+// list[2]=5
+// println list
+
+//Iterating
+// list.each {println it}
+// list.eachWithIndex {it, i -> println "$i: $it"}
+
+//Finding
+// println list.indexOf(6)
+// println list.contains(5)
+
+// println list
+// println list.sort()
+
+//collect and findAll
+// def doubled = list.collect {it * 2}
+// def even = list.findAll{it % 2 == 0}
+
+// println list
+// println even
+ 
+//  println list.min()
+//  println list.max()
+
+
+//Maps
+
+// def myMap = [name: 'Alice', age:25, city: 'London']
+// def emptyMap = [:]
+// println myMap
+// println myMap.size()
+
+//Accessing
+// println myMap.name
+// println myMap.get('age')
+// println myMap['city']
+
+//Remove
+// println myMap
+// // myMap.remove('city')
+// myMap.clear()
+
+//Modify
+// println myMap
+// myMap.age = 26
+// println myMap
+
+//Iterate
+// myMap.each { entry ->
+//     println "$entry.key: $entry.value"
+// }
+
+// myMap.each {key, value ->
+//     println "$key: $value"
+// }
+
+// myMap.eachWithIndex {key, value, i ->
+//     println "$i - $key: $value"
+// }
+
+//Checking for Keys or values
+// println myMap.containsKey('name')
+// println myMap.containsValue(26)
+
+// def people = [
+//     1: [name:'Bob', age: 32, gender: 'M'],
+//     2: [name:'Johnny', age: 36, gender: 'M'],
+//     3: [name:'Claire', age: 21, gender: 'F'],
+//     4: [name:'Amy', age: 54, gender:'F']
+// ]
+
+// // def bob = people.find {it.value.name == 'Bob'}
+// // println bob
+
+// def females = people.findAll {it.value.gender == 'F'}
+// println females
+
+
+//Ranges
+
+//..
+
+def numericRange = 1..10
+def characterRange = 'a'..'z'
+
+// println characterRange.size()
+// println numericRange.size()
+
+// def numericRange = 1<..<10
+// println numericRange.size()
+
+// println numericRange[2]
+// println numericRange.get(2)
+
+// for (i in characterRange){
+//     print i
+// }
+
+// characterRange.each{print it}
+
+// println characterRange.contains('v')
+
+// println numericRange.from
+// println numericRange.getFrom()
+
+// println numericRange.to
+// println numericRange.getTo()
+
+
+// print characterRange.reverse()
