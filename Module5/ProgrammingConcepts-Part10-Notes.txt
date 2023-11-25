@@ -1,0 +1,80 @@
+//OOP Basics
+
+//Procedural
+//Functional
+//Object-oritented
+//Event-drive etc
+
+//Object-oritented Paradigm
+
+//object
+//data & methods
+
+//Benefits
+//reduce complexity
+//reuse the code
+// faster development
+
+//Class - blueprint or template for creating the objects
+//Object - is an instance of class.
+
+// class Student {
+//     String name
+//     int age
+
+//     void displayInfo(){
+//         println "Name: $name"
+//         println "Age: $age"
+//     }
+// }
+
+// def student1 = new Student()
+// def student2 = new Student()
+
+// student1.name = "Bob"
+// student1.age = 30
+// student1.displayInfo()
+
+// student2.name = "John"
+// student2.age = 24
+// student2.displayInfo()
+
+//Encapsulation
+//Inheritance
+//Polymorphism
+
+// Packages
+
+//Import
+//https://javadoc.io/doc/org.codehaus.groovy/groovy-all/2.5.16/allpackages-index.html
+
+//Default Imports
+// import java.lang.*
+// import java.util.*
+// import java.io.*
+// import java.net.*
+// import groovy.lang.*
+// import groovy.util.*
+// import java.math.BigInteger
+// import java.math.BigDecimal
+
+//https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/FileOutputStream.html
+
+//Simple Import
+
+// import groovy.json.JsonBuilder
+
+// def data = [name: "John", age: 30, city: "New York"]
+
+// println data
+
+// def jsonBuilder = new JsonBuilder(data)
+// def jsonString = jsonBuilder.toPrettyString()
+// println jsonString
+
+// Star Import
+
+// import groovy.json.*
+
+
+

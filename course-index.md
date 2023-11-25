@@ -130,6 +130,7 @@
   - Lists
   - Maps
   - Ranges
+- OOP Basics
 - File I/O Operations (Read & Write)
 - Regular Expressions
 
