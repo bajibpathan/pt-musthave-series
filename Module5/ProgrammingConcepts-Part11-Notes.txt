@@ -1,0 +1,121 @@
+//File I/O Operations
+
+//java.io 
+
+// def file = new File("SampleFile.txt")
+
+//Display the absolute path
+// println file.absolutePath
+
+//Display the file size
+// println file.length()
+
+//Read the contents of file as a string
+// println file.text
+
+//Read file into a list of Strings
+// println file.readLines()
+
+//Read line by line
+// file.eachLine { line -> 
+//     println line
+// }
+
+// if(file.exists()){
+//     file.eachLine { line -> 
+//     println line
+// }
+// }else {
+//     println "File doesn't exit."
+// }
+
+//Writing data to the file
+// def file = new File("MyNewFile.txt")
+
+// file.write("This a sample text")
+// file << "\nThis a new line"
+
+// file.withWriter {write -> 
+//     write.writeLine("The is another line")
+//     write.writeLine("The is another line")
+// }
+
+// file.append("This is a new lin added tot he file.\n")
+// println file.text
+
+//Regular Expressions
+//java.util.regex
+// .   Matches any character except a newline
+// * Matches the preceding character 0 or more times 
+// + Matches the preceding character 1 or more times
+// ? Matches the preceding character zero or one time
+// \d  Matches any digit (0-9)
+// \s  Matches any whitespace character (space, tab, newline, etc)
+// \w  Matches any word character (letter, digit, underscore)
+
+// /.../
+///world/
+
+//=~
+
+// def text = "Hello"
+// def pattern = /B[a-z]+/
+// def isMatch = text =~ pattern
+// println isMatch.matches()
+
+//find()
+// def text = "The quick brown fox jumps over the lazy dog."
+// def pattern = /b[a-z]+/
+// def found = text.find(pattern)
+// println found
+
+// def text = "The quick brown fox jumps over the lazy dog."
+// def pattern = /brown/
+// def replaced = text.replaceAll(pattern, "red")
+// println replaced
+
+//Closures
+// anonymous blocks of code
+
+//Default syntax
+//{ [closureParameters -> ] statements }
+
+def myClousre = {println "Hello Groovy"}
+
+// myClousre()
+// myClousre.call()
+
+// def multiLineClosure = {
+//     println "This"
+//     println "is"
+//     println "a multi-line"
+//     println "closure."
+// }
+
+// multiLineClosure()
+
+//"it"
+
+// def myClosure = {println "Hello $it"}
+// myClosure("java")
+
+// def myClosure = { name -> println "Hello $name"}
+// myClosure("Python")
+
+// def number = 20
+
+// // def sum = { it + number }
+// def sum(value){
+//     return value + number
+// }
+
+// println sum(5)
+
+// def numbers = [1,2,3,4,5]
+// numbers.each {println it * 2}
+
+// def transform = {str, transformation -> 
+//     transformation(str)
+// } 
+// println transform("Hello Groovy", { it.toUpperCase() })
+

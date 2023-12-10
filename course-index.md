@@ -133,6 +133,7 @@
 - OOP Basics
 - File I/O Operations (Read & Write)
 - Regular Expressions
+- Closures
 
 ## Module 6: Performance Testing Tools
 
