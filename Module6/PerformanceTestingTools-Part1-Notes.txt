@@ -1,0 +1,23 @@
+How to choose the right performance testing tool?
+===================================================
+Selecting the right performance testing tool depends on various factors aligned with your project's needs and team capabilities.
+
+This activity will take place during planning in PTLC.
+
+Proof of Concept (POC) - a little test or experiment to check if something will work before committing.
+
+Step by step apparoch
+1. Evaulate tool Features
+ - Performance Goals
+ - Technology Stack
+ - Protocol Support
+ - Ease of Use  
+ - Reporting 
+ - Integration 
+2. Budget Consideration
+ - Const 
+ - Support 
+ - Maintenance 
+3. Skilled Resource
+4. Trial and Evaulate 
+
