@@ -1,0 +1,33 @@
+Performance Tesitng Tools
+========================
+
+2 Categories
+
+- Open Soure
+- Commercial
+
+- Open Source
+    Access, modify, and distribute the source code freely.
+    Support often relies on community forums, user groups, and contributions from the community.
+    Free to use
+
+- Commercial
+    Proprietary and usually requires purchasing a license for use.
+    Offer dedicated customer support, regular updates, and maintenance as part of the license agreement
+    Usually involves upfront costs for licensing
+
+Popular Tools
+- LoadRunner
+- Apache Jmeter
+- NeoLoad
+- Gatling
+
+Performance Testing Tool components
+- Script Editor
+    - Used to develop the test scripts
+- Controller
+   - Used to create test scenarios and execute them 
+- Load Generator
+   - Generate virtual user load
+- Analyzer
+   - Anaylyze the test results
