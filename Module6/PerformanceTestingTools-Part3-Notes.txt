@@ -1,0 +1,40 @@
+What is JMeter?
+================
+The Apache Jmeter is an open source, Java based performance testing tool designed to load test and measure the application performance.
+It supported by Windows, Linux and Mac platforms.
+
+
+Features
+========
+- Easy Installation
+- User-Friendly GUI
+- Open source
+- Protocol support
+- Command Line 
+- Record and Playback 
+- Multi-threading Framework
+- Highly extensible
+- Reporting
+- Distributed testing
+- Integration
+
+JMeter vs LoadRunner
+
+JMeter:
+
+Open-source and free to use
+No concept of installation
+Supports multi-platform
+User-friendly GUI
+No Scripting knowledge required
+Large community support
+Plugins available for customization
+
+LoadRunner:
+Commercial with licensing costs
+Installation is required
+Supports Windows only
+Separate interfaces for different components
+Scripting knowledge required
+Dedicated & smaller community
+Limitations in terms of customization
