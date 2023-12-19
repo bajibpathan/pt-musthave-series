@@ -1,0 +1,29 @@
+How to install JMeter on Winows and Mac
+========================================
+
+Pre-requisites:
+---------------
+Java 8 or higher version
+
+To verify if Java, run the below Command
+java --version
+
+
+Steps on Windows:
+1. Download the Support archive from Apache Jmeter official website
+https://jmeter.apache.org/download_jmeter.cgi
+Binaries -> apache-jmeter-5.6.2.zip
+
+2. Extact the archive into the required folder
+
+3. Setup the environment variable (optional)
+
+Steps on Mac:
+1. Open terminal
+2. Execute the command "brew install jmeter"
+Note: Please make sure that homebrew package is installed.
+
+
+To run / open the Jmeter 
+on Windows, go to apache-jmeter.5.6.2\bin folder and run the jmeter.bat file
+on Mac, in terminal type jmeter
