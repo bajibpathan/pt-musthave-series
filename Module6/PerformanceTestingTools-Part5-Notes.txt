@@ -1,0 +1,78 @@
+JMeter Folder Structure
+========================================
+
+With the latest version installation, the following will be available in the Apache JMeter folder.
+apache-jmeter-.5.6.2
+|--backups
+|--bin
+|--docs
+|--extras
+|--lib
+|--licenses
+|--printable_docs
+|--LICENSE
+|--NOTICE
+|--README.md
+
+apache-jmeter-X.Y.Z
+-------------------
+This is also called as ROOT folder. 
+X.Y.Z represents the version number of the JMeter.
+
+backups
+-------
+This folder will be created after scripting.  
+JMeter will take script backups at certain intervals.
+There is a limit and it can modified in jmeter.properties
+
+bin
+----
+Important folder which contains all executables files like jmeter.bat or jmeter.sh
+Also contains configuration files and properties files (Jmeter, user and system)
+
+It cotntains 3 sub-folders
+examples
+reprot templates
+templates
+
+exmaples folder contains examples of CSV and Script examples
+report templates and templates contains sample report and script templates.
+
+docs
+----
+Contains JMeter package documenation, JMeter Logs and UI Screenshots.
+
+It contains 3 sub-folders
+api - JMeter package documentation
+css - Package documentation style sheets
+images - Logs, JMeter UI Screenshots
+
+
+extras
+------
+Contains additional resources, extensions, or supplementary files that can enhance  JMeter's functionalities. 
+
+lib
+---
+Contains  important libraries and JAR (Java Archive) files for JMeter functionalities.
+
+It contains 2 sub folders
+ext
+junit
+
+exit contains the extensions/plugins which can help to extend the JMeter Functionality.
+junit contains libraries that supports Junit testing framework.
+
+licenses
+--------
+contains the licenses and legal documentation associated with the various components, libraries, and plugins used within the JMeter software.
+
+printable_docs
+--------------
+Contains documentation and guides formatted for printing purposes. 
+
+LICENSE, Notice and README.md
+-----------------------------
+LICENSE - Software's licensing terms and conditions, specifying how the JMeter software can be used, distributed, and modified.
+Notice - Contains information about any third-party libraries, components, or dependencies 
+README.md - readme docuemntation in markdown format providing instructions, and guidelines for users to get started with JMeter. 
