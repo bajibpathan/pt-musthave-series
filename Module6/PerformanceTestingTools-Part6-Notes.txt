@@ -1,0 +1,83 @@
+JMeter Architecture Elements
+============================
+
+Test plan
+Threads (Users)
+Sampler
+Config Element
+Timer
+Logic Controller
+Pre Processors
+Post Processors
+Assertions
+Listener
+Test Fragment
+Non-Test Elements
+
+
+Test plan
+---------
+Root or top-level element under which all other elements will be configured.
+Serves as the backbone of the performance test 
+
+Threads (Users)
+---------------
+Provides a set of instructions used for simulating the virtual user load. 
+Commonly used element in this type is Thread Group.
+Defines number of threads (virtual users), ramp-up duration and number of iterations.
+
+Sampler
+-------
+Send specific types of requests to the server. For example, HTTP Request for Web request
+In other tools, they call it as "Protocol".
+Can be added as a child element to Thread Group element.
+Can't be added as a child to Test Plan element.
+
+Config Element
+--------------
+Closely work with Sampler element.
+It helps in configuring and customizing different other elements.
+Ex: CSV Data Set config can be configured to store the test data
+
+Timer
+-----
+It helps to define wait time or dealy between sampler requests.
+Control number of requests to the server
+
+Logic Controller
+----------------
+Manages the flow of the requests sent to the server.
+Control the order or repetition of the requests.
+
+Pre Processors
+-----------------------
+Executs some action before a sample request made.
+Allows to modify or manipulates the samplers requests
+
+
+Post Processors
+-----------------------
+Executes some action after a sample request made.
+Allows to extract the data from responses.
+
+Assertions
+----------
+Validation checks to verify if the server response meets the criteria.
+Acts as a quality checkpoint, verify various aspects such as repsone data, timing and duration.
+
+Listener
+--------
+It helps to display the results
+Present the data in various formats like Graphs, tables etc 
+
+
+Test Fragment
+-------------
+Added to minimize the script size
+Purely for code re-use
+It main consitency,reducing the redundancy
+
+Non-Test Elements
+-----------------
+Not directly involved in test execution.
+However, play an important role.
