@@ -1,0 +1,34 @@
+JMeter User Interface
+============================
+
+Mainly divided into 4 parts
+
+- Menu Bar
+- Tool Bar
+- Elements Pane 
+- Configuration Properties Pane
+
+Menu Bar
+--------
+The JMeter menu bar is located at the top of the application window and provides access to various functionalities and options
+File: Contains options for creating, opening, saving, and exiting test plans. It also allows importing/exporting configurations and templates.
+Edit: Provides editing functionalities like copy, paste, delete, and search within the test plan elements.
+Search: Enables searching for specific elements or text within the test plan.
+Run: Contains options for starting, stopping, pausing, and controlling the execution of the test.
+Options: Accesses global settings, configurations, and preferences for JMeter.
+Help: Provides assistance and access to JMeter's documentation, user manual, and community support resources.
+
+Tool Bar
+--------
+The toolbar is located at the top of the application window and provides quick access to frequently used functionalities and actions.
+
+Elements Pane
+-------------
+
+In this section, we can add / remove the elements.
+Default element is Test Plan
+
+Configuration Properties Pane
+-----------------------------
+Based on the selection of the element, it will show all the available properties of that element.
+

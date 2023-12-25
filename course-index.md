@@ -140,13 +140,14 @@
 - How to choose the right testing tool ?
 - Popular performance tools available in the Industry
 - High-level components of any performance testing tool
-- Introduction to Jmeter and Its features
-- Difference between Jmeter with other Performance testing tools
-- Pre-requisites for Jmeter Installation
-- Jmeter Installation
-- Jmeter software folder structure
-- How to launch Jmeter in GUI and Non-GUI Mode and Command-line mode
-- Overview of Jmeter elements
+- Introduction to JMeter and Its features
+- Difference between JMeter with other Performance testing tools
+- Pre-requisites for JMeter Installation
+- JMeter Installation
+- JMeter software folder structure
+- How to launch JMeter in GUI and Non-GUI Mode and Command-line mode
+- JMeter User Interaface Quick Tour
+- Overview of JMeter elements
   - Test Plan
   - Thread Group
   - Samplers
@@ -155,8 +156,8 @@
   - Assertions
   - Timers
   - Listeners
-- Jmeter Functions
-- Jmeter Plugin Manager
+- JMeter Functions
+- JMeter Plugin Manager
 - Different recording methods
 - Script Enhancement Concepts
   - Parameterization
@@ -165,8 +166,8 @@
 - Distributed Testing
 - Reporting Concepts
   - Generating HTML Report
-- Jmeter CICD pipeline Integration
-- Misc Jmeter concepts
+- JMeter CICD pipeline Integration
+- Misc JMeter concepts
 - Tips & Tricks
 
 ## Module 7: Monitoring tools
