@@ -1,0 +1,51 @@
+JMeter Architectuere Elements - Part 1
+======================================
+
+- Test Plan
+- Thread Group
+- Sampler (HTTP Request)
+- Listeners
+  - View Results Tree
+  - View Results in Table
+  - Aggreggrate Report
+
+
+Test Plan
+---------
+- Default parent element created by JMeter
+- All other child elements like Thread Groups, Samplers etc will added to this element.
+- It is not possible to remove
+- User defined Variables section can be used to define some common variables that can be used in all samplers.
+- Run Thread Groups consecutively - To run thread groups sequentially
+- We can add additional jar dependencies to test the application in the test plan element.
+
+
+Thread Group
+------------
+- Most commonly used Threads element.
+- This is the first element that needs to be added in the scripting.
+- Thread Groups are used to create threads. Here Threads are nothing but Virtual users.
+- Action to be taken after a Sample error section can be used to control the script execution in case of any Sampler error.
+- In Thread Properties section, we configure number of Threads / users, ramp-up duration and number of iterations.
+- We can also execute the test by defining the test duration by selecting the Specify Thread Life time.
+
+Sampler
+-------
+- These elements are used to send the user requests to the server using the respective protocol.
+- There are many elements available like HTTP Request, FTP Request, JDBC Request etc
+- For testing web applications or APIs, we generally use HTTP Request sampler.
+- We have configuration options available in 2 tabs (Basic & Advanced)
+- Basic configuration tab will be used to configure basic options like protocol, server name, port, method and additional parameters of the request.
+- Advanced configuration tab will be used to configure advanced options like Client implementation, Timeouts, Proxy server etc
+
+Listeners
+---------
+- Listeners display the test results.
+- We have so many listeners available and "View Results Tree" is commonly used one during the scirpt devleopment process.
+- View Results in Table can be used to view the results in the tabular format.
+- Aggreggrate report will be used to view the agreggrated results.
+- By default, the agreggrated report will show 90th, 95th and 99th Percentile.
+- You can modify this by updating aggregate_rpt_pct1 in jmeter.properties file.
+
+
+
