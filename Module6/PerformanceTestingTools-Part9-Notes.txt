@@ -1,0 +1,126 @@
+JMeter Architectuere Elements - Part 2
+======================================
+
+- Config Elements
+  - HTTP Request Defaults
+  - HTTP Header Manager
+  - HTTP Cookie Manager
+  - HTTP Cache Manager
+  - User Defined Variables
+- Controllers
+  - Simple Controller
+  - Loop Controller
+  - Only Once Controller
+  - Runtime Controller
+  - Random Controller
+  - Interleave Controller
+  - Transaction Controller
+  - If Controller
+- Timers
+  - Constant Timer
+  - Uniform Random Timer
+  - Constannt Throughput Timer 
+- Assertions
+  - Response Assertion
+  - Duration Assertion
+
+Config Elements
+===============
+Config elements are used to setup default values and variables to be used by samplers.
+
+
+HTTP Request Defaults
+---------------------
+The main purpose of the HTTP Reqeust defaults is to avoid data duplications and make it test plan more maintainable.
+
+HTTP Header Manager
+-------------------
+HTTP Header Manager element lets you add or override the HTTP request headers.
+Ex: 
+Accept-Language:en-US
+Accept-Encoding: gzip, deflate, br
+
+HTTP Cookie Manager
+-------------------
+We can handle cookies using HTTP Cookie Manager element.
+It helps to simulate the real web browser behavior. 
+
+HTTP Cache Manager
+------------------
+We can use HTTP Cache Manager for addig caching functionality to HTTP requests to simulate browser cache feature.
+Every resource downloaded from the server has Last-Modified value in the header which incidates the last-modified time of the resource and Etag which is an identifier of the specific version of the resource.
+If HTTP Cache Manager is used then for every new sampler if verifies the available cache entries using these headers before making request to the web server.
+
+User Defined Variables
+---------------------
+User Defined Variables are used to define the variables that are used throughout the test plan.
+
+Controllers
+===========
+Logic Controllers determine the order in which Samplers are processed.
+
+
+Simple Controller
+-----------------
+It serves as a logical container to group together various samplers, controllers, and listeners. 
+
+Loop Controller
+----------------
+It allows you to repeatedly execute its children a certain number of times.
+
+Only Once Controller
+--------------------
+It Process the elements inside it only once per thread.
+
+Runtime Controller
+------------------
+It allows you to control the duration for which its child elements like samplers etc. should run. 
+
+Random Controller
+-----------------
+It allows you to execute its child elements (samplers, controllers, etc.) in a random order.
+
+Interleave Controller
+---------------------
+It is used to alternate among the samplers or child controllers placed inside it.
+
+Transaction Controller
+---------------------
+It groups a set of elements (samplers, controllers, etc.) together to represent a transaction. 
+
+
+If Controller
+-------------
+It allows you to control the execution of its child elements (samplers, controllers, etc.) based on a condition. 
+
+
+Timers
+======
+
+Timer elements aer used to pause the JMeter threads for certain amount of time. 
+
+Constant Timer
+--------------
+It can be used to pause each thread the same amount of time between the requests.
+
+Uniform Random Timer
+--------------------
+This element can pause each thread request for a random amount of time. 
+
+Constant Throughput Timer
+-----------------------
+It is used to delay the threads to meet the throughput goals.
+
+
+Assertions
+==========
+To validate the server response on the basis of some pre-defined conditions.
+
+
+Response Assertion
+------------------
+Checks whether the server's response contains specific text, patterns, or expressions.
+
+Duration Assertion
+------------------
+Verifies whether the server's response time falls within a given amount of time. 
