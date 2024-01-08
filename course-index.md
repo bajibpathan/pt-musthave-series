@@ -156,8 +156,9 @@
   - Assertions
   - Timers
   - Listeners
-- JMeter Functions
+- Scoping Rules & Execution Order
 - JMeter Plugin Manager
+- JMeter Functions
 - Different recording methods
 - Script Enhancement Concepts
   - Parameterization
