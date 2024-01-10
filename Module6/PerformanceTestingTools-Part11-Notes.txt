@@ -1,0 +1,23 @@
+JMeter Plugins Manager
+======================
+What is a plugin?
+
+A plug-in is a piece of software component that adds new features or extends functionality on an existing application.
+
+
+JMeter allows users to expand its capabilities beyond its core functionalities with the help of different plugins developed by the JMeter community. 
+
+Plugin installation Process
+---------------------------
+1. Download the plugin from https://jmeter-plugins.org/
+2. Unzip the plugin zip package
+3. Copy the plugin jar to JMeter/lib/ext folder or directory
+4. Restart the JMeter
+
+Plugins Manager
+---------------
+It is used to manage all the plugins without need to installing plugin manually.
+
+The installation process is same as Plugin.
+
+We need download the plugins-manager jar from official web site and put it into the JMeter/lib/ext and restart the JMeter.
