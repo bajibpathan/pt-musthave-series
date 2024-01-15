@@ -158,12 +158,14 @@
   - Listeners
 - Scoping Rules & Execution Order
 - JMeter Plugin Manager
-- JMeter Functions
-- Different recording methods
+- How to record script in JMeter?
+  - HTTP(S) Test Script Recorder
+  - Badboy (Deprecated)
+  - Blazemeter Chrome Extension
 - Script Enhancement Concepts
   - Parameterization
   - Correlation
-- Executing the tests
+- JMeter Functions
 - Distributed Testing
 - Reporting Concepts
   - Generating HTML Report

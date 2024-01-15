@@ -1,0 +1,67 @@
+How to Record Script in JMeter?
+===============================
+
+What is a Script?
+-----------------
+A script is like a set of instructions or a code that pretends to be users doing some actions in an application or software system.
+
+What is Script Recording?
+-------------------------
+Script recording is a technique used in performance testing to create test scripts by capturing and translating the interactions of a user with a web application.
+
+Why Recording is required?
+--------------------------
+ - Efficiency & Time Saving
+ - Complexity Handling
+
+ How Recording Works?
+ ---------------------
+
+ When we perform the expected user action manually all the requests sent from the configured browser go via the proxy server and that's the local machine. 
+As the JMeter sets to listen at the same port it can have a log of all the requests sent via a browser.
+
+How to Record Script?
+-------------------
+We can record the JMeter script in 3 different ways
+
+- Using HTTP(S) Test Script Recorder (Default JMeter utility)
+- Badboy Software (Deprecated)
+- Blazemeter Chrome Extension
+
+
+HTTP(S) Test Script Recorder
+----------------------------
+
+- Add Thread Group and add Recording controller / Transaction Controllers
+- Add Non-Test Element i.e. HTTP(S) Test Script Recorder
+- Add Listner (View Test Results) to Non-Test Element.
+- Generate the JMeter Root Certificate and Import to Browswer
+- Update the proxy server and make sure the port is same as in JMeter (Default 8888)
+- Open the browser
+- Start the recording
+- Navigate the applicaiton transactions. If you have separate transaction controllers defined then select them as Target Controller before performing the step in the application.
+- Validate the traffic during the recording.
+- Stop the recording
+
+
+Badboy Software (Deprecated)
+----------------------------
+- Download the software
+- Install the software
+- Make sure ther recording is ON.
+- Type the URL address in the address bar
+- Navigate the transactions and observe the traffic in the Tree pane.
+- Export the user traffic to JMX from File menu.
+- Open the JMX file in JMeter 
+
+Blazemeter Chrome Extension
+---------------------------
+- Go to Chrome webstore
+- Look for Blazemeter Chrome Extension
+- Add to Chrome
+- Login to Blazemeter account before start recording
+- Update the required settings in the extension.
+- Start the recording
+- Navigate the transactions and observe the traffic.
+- Save it as JMX
+- Open the JMX file in JMeter 
