@@ -1,0 +1,55 @@
+Parameterization
+================
+
+During the script recording, we might be giving lot of input values and JMeter will record all the actual values.
+
+Executing the test with the same values with mutliple users is not realistic scenario. 
+
+So, the process of replacing the actual input values with variables / parameters is called Parameterization.
+
+Vairable name synatx:
+
+${variableName}
+
+ex:
+${userName}
+
+We can handle the parameterization using the elements like
+
+- User Defined Variables
+- User Parameters 
+- CSV Data Set Config 
+
+
+User Defined Variables
+----------------------
+- It is a config element and suitable to parameterization static variables like protocol, servername etc
+- We can only assign only one value in the variable
+
+
+User Parameters
+---------------
+- It is a Preprocessor element and it is used to define user specific values to individual threads.
+- We can assign multiple values to each variable.
+
+
+CSV Data Set Config
+-------------------
+- It is a Config Element and it allows you to read data from a CSV file and use it in the script.
+- It is more suitable when the values in the script chagned every iteration.
+- We can also assign mulitple values in each variable.
+
+Important Configuration of CSV Data Set Config is "Sharing Mode"
+
+Sharing Mode Options
+--------------------    
+- All threads - CSV file will be shared with all threads and every thread will read one line sequentially.
+- Current thread Group - CSV file will be shared each thread group and they will open it separetly. Inside the thread group, all therads will follow the all thread methods to read the data.
+- Current thread - CSV fill will be shared to each thread and they will read the data from the begining independently without affecting each other.
+- Edit - Sharing mode will be turned into an input field and we can specify the thread group that we would like to share the CSV file.
+
+
+Functions used in the script:
+Thread # ${__threadNum} : Iteration # ${__intSum(1,${__jm__Thread Group__idx})}
+
+To add Dummy Sampler, go to Options -> Plugin Manager and look for Dummy in the available plugins and then install the Plugin.
