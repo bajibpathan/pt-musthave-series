@@ -1,0 +1,78 @@
+Correlation
+================
+
+The process of extracting the dynamic value from the server response, storing it in a variable and passing it over to subsquent requests is called Correlation.
+
+Examples of Dynamic values:
+--------------------------
+Session ID -> Response: Set-Cookie: JSESSIONID=ABC123XYZ; Path=/
+CSRF Token -> <input type="hidden" name="csrf_token" value="a1b2c3d4e5f6">
+View State -> <input type="hidden" name="__VIEWSTATE" value="/wEPDwULLT...">
+Timestamps -> Response: {"timestamp": 1642675328000}
+Dynamic URL -> https://example.com/products/details?productID=12345
+Authentication Tokens -> {"access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."}
+Random Values -> <input type="hidden" name="random_token" value="a1b2c3d4e5">
+
+
+There are two ways to do the correlation.
+
+1. Manual Correlation
+2. Auto Correlation.
+
+Manual Correlation
+------------------
+
+The performance tester will manually identify the dynamic values in the server response and correlate them in the subsequent requests.
+In JMeter, we will do the  manual correlation using Post-Processor elements.
+The most commonly used Post-Processor element is "Regular Expression Extractor"
+
+Auto Correlation
+----------------
+In this process, the tool will identify the dymanic value in the server response and correlate it and pass it over subsquent requests.
+We don't have any default elements to handle this auto correlation process.
+Blazemeter created a plugin "Correlation Recorder" with which we can handle the Auto Correlation process.
+
+Correlation Process:
+-------------------
+It's a 3 step process:
+
+Step # 1: 
+
+Identify the dynamic value from the server response. We can identify the dynamic values using 2 methods.
+ - Record & Compare: Here, we need to record the script multiple times with the same data and flow and compare the scripts.
+ - Replay & Investigate: Here, we need to record the script once and then replay it without any customizations. If the scirpt fails, then we need investigate for the dynamic value using the failed request.
+
+Step # 2:
+Add Post-Processor element (Regular Expression Extractor) and configure all the required options.
+
+Step # 3: 
+Replace the variable in the subsequent requests.
+
+Regular Expression:
+-------------------
+It is a sequence of characters that defines a search pattern to match a string/text
+We can define the pattern in two ways
+
+- Using Simple characters
+Simple patterns consist of specific characters for which you want to find a direct match.
+Ex: abc 
+
+- Using Special characters
+When the search for a match requires something more than a direct match, like finding one or more character, or finding white space, we can use the special characters in the pattern.
+Ex: ab*c
+
+https://regexr.com is the good website for mastering Regular expressions.
+
+
+Regular expresssion pattern used in the demo:
+
+(.+?)
+
+() - Group
+. - Match any character
++ - one or more times
+? - stop when first match succeeds
+
+
+
+
