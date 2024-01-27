@@ -1,0 +1,53 @@
+Functions
+=========
+Wikepedia Defintion: 
+A sequence of program instructions that performs a specific task, packaged as a unit.
+
+Functions can be categoriezed int two types
+- Built-in Functions
+- User-Defined Functions
+
+Built-in Functions:
+---------------------
+Built-in functions are pre-defined functions in a programming language that perform specific tasks. 
+
+User-Defined Functions:
+-------------------------
+User-defined functions are functions created by the programmer to perform a specific task.
+
+JMeter Function definition:
+Functions are special values that can populate fields of any Sampler or other element in a test tree.
+
+Syntax:
+${__functionName(var1,var2,var3)}
+
+__functionName is the name of the function
+var1, var2 and var3 are the arguments.
+
+These arguments will vary from function to function. Some functions may take arguments and some not.
+
+Function Groups:
+Information: To retrieve or display the information.
+Input: To read or write the data.
+Calculation: To calculate or generate some random variales.
+Scripting: To execute the supported lanaguges code.
+Properties: To read or set the Properties
+Variables: To manipulate or extract the information from the variables.
+String: To tranform or convert the strings
+Formatting: To convert the date from Source to target format.
+
+We also have "Function Helper Dialog" which will provides assistance and information about the various available functions.
+
+Functions:
+
+Counter: ${__counter(TRUE,counter_var)}
+dateTiemConvert: ${__dateTimeConvert(01262024,MMddyyyy,dd/MM/yyyy,)}
+random Number: ${__Random(10,100,random_Num)}
+random String: ${__RandomString(15,ABCD$@#3435,random_String)}
+UUID: ${__UUID}
+JavaScript Random Number: ${__javaScript(Math.floor(Math.random()* 10),javascript_rand)}
+Change Case: ${__changeCase(jmeter is fun to learn,CAPITALIZE,case_var)}
+Encode: ${__urlencode(https://jmeter.apache.org?test)}
+Decode: ${__urldecode(https%3A%2F%2Fjmeter.apache.org%3Ftest)}
+
+We also have a Custom JMeter Functions which will provide additional functions.
