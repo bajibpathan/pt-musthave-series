@@ -166,6 +166,7 @@
   - Parameterization
   - Correlation
 - JMeter Functions
+- Modularization
 - Distributed Testing
 - Reporting Concepts
   - Generating HTML Report

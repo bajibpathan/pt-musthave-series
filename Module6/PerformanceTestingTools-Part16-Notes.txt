@@ -1,0 +1,21 @@
+Modularization
+==============
+
+Modularization means breaking down a large and complex piece into smaller, self-contained parts. 
+
+Copying the repetative steps in all the scripts is not correct approach. If any changes to the repetative steps, then we may need to do it in all the scripts.
+
+To address this kind of challenge, we need to follow the Modularization process.
+
+In JMeter, Modularization can be achieved using the Test Fragment & Module controller or Test Fragment & Include controller combination.
+
+Module controller & Include controller can be added to Thread Groups
+
+Thread Group
+|---Logic controller
+     |----Module Controller or Include Controller
+
+Using Module Controller, Test Fragment should be available inside the same test plan.
+Using Input Controller, we can save the Test Fragments as a separate jmx file.
+
+
