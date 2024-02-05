@@ -1,0 +1,119 @@
+API Performance Testing
+=========================
+API stands for Application Programming Interface
+
+API  is a set of rules, protocols, and tools that allows different software applications to communicate to each other. The API acts as a bridge, ensuring smooth interaction between the client and the server.
+APIs can be local, remote, or a combination of both.  They are not necessarily web-based and can function within the same system or across different systems.
+
+API Key
+-------
+An API key is a unique string of characters,that serves as a form of authentication and authorization for accessing specific functionalities or resources within an API.
+
+API Types
+---------
+- Public APIs
+  - Public APIs are also called as Open APIs and they are available all the external developers
+- Private APIs
+  - Private IPs are also called as Internal APIs and are designed for Internal use within the company
+- Partners APIs
+  - Partner APIs, are interfaces specifically designed to facilitate communication and collaboration between different organizations, typically business partners or third-party entities
+- Composite APIs
+  - Instead of interacting with individual APIs separately, developers can use a Composite API to perform a sequence of operations or obtain data from multiple sources with a single API call. 
+
+
+API architectural styles
+------------------------
+- SOAP 
+  SOAP stands for Simple Object Access Protocol. It is a communication protocol.
+  It provides a standardized way for different software applications to communicate.
+  The preferred message format is XML (Extensible Markup Language)
+  Message Elements:
+   - <Envelope> 
+       - <Headers>
+       - <Body>
+          <Fault>
+  
+WSDL stands for Web Services Description . It serves as a comprehensive description that helps both service providers and consumers understand how to interact with a web service.
+UDDI stands for Universal Description, Discovery, and Integration. It acts as a centralized registry where service providers can publish information about their web services.
+
+REST
+----
+REST stands for Representational State Transfer. It allows different software applications to communicate with each other over the internet.
+In REST API everything is considered as resource. Each resource uniquely identified by a URI (Uniform Resource Identifier).
+Ex: https://example/api/v1/products
+
+
+The request has very specific format like POST /customers HTTP/1.1. This URI preceeds with HTTP verb which tells to the server what we want to do with the resource
+
+HTTP methods / verbs:
+
+POST  -  CREATE a new resource
+GET  - READ an existing resource
+PUT - UPDATE an existing resource
+DELETE - DELTE an existing resource
+
+The two most common formats for REST API payloads are JSON (JavaScript Object Notation) and XML (eXtensible Markup Language).
+HTTP Status codes:
+100-199 - Infromational responses
+200-299 - Successful responses
+300-399 - Redirection messages
+400-499 - Client error messages
+500-599 - Server error messages
+
+GraphQL
+-------
+GraphQL is a query language for APIs that was developed by Facebook.
+It allows clients to request only the data they need, minimizing over-fetching or under-fetching the data.
+GraphQL has typically a single endpoint. Clients can request data from this endpoint using queries, and the server responds with the requested data.
+GraphQL supports Mutations and Subscriptions. Mutations are used for modifying the data and subscriptions are for real-time updates.
+
+
+gRPC
+----
+
+gRPC is an open-source, high-performance RPC (Remote Procedure Call) framework initially developed by Google.
+A local procedural call is nothing but calling a proecedure or function within the same program or application. 
+Remote Procedure call is calling a procedure or function on a remote system
+The core of gRPC is Protocol BUffers which simplify the way different parts of an application communicate by providing a structured and efficient method for defining and exchanging data
+gRPC uses HTTP/2 as its underlying transport Protocol which provides a more efficient communication layer for remote procedure calls. 
+
+
+Web Socket
+----------
+WebSocket is a communication protocol that enables real-time, bidirectional communication between a client (like a web browser) and a server over a single, long-lived connection.
+
+Web Hook
+--------
+A webhook is a way for one system to provide real-time information to another system. It allows automated notifications or data updates to be sent from one application (the sender) to another (the receiver) whenever a specific event occurs. 
+
+
+Web Service vs APIs
+-------------------
+APIs are set of rules and tools that allows different software applications to communicate with each other while web services specifically refer to APIs that operate over the web.
+APIs can be local or remote, and they may not necessarily operate over the web. 
+In a nutshell, all web services are APIs, but not all APIs are web services.
+
+API Performance Tesitng Requirements
+-------------------------------------
+
+Type of APIs (Internal / External)
+End points and Methods
+Authentication Details
+Sample Request & Response Formats
+Input Parameters / Test Data
+Rate Limiting / Thorttling
+Workloads / SLAs
+
+In JMeter, we can use HTTP Request Sampler and HTTP Header Manager to create SOAP / REST API scripts.
+
+Client Certficates:
+-------------------
+JMeter supports JKS (Java Key Store) Certificates.
+They can imported in 2 ways.
+From JMeter UI -> Options -> SSL Manager
+For Non GUI Mode, go to JMeter bin directory and look for system.properties and then uncomment the following parameters and fill the details.
+
+javax.net.ssl.keyStore=/path/to/jks/file
+javax.net.ssl.keyStorePassword=yourJKSpassword
+
+

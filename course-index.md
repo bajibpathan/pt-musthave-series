@@ -167,6 +167,7 @@
   - Correlation
 - JMeter Functions
 - Modularization
+- API Performance Testing
 - Distributed Testing
 - Reporting Concepts
   - Generating HTML Report
