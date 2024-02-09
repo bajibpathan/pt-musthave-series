@@ -1,0 +1,17 @@
+Scripting Best Practices
+=========================
+It is important to follow the best practies to create efficient scripts that are easily maintainable and consistent with other scripts.
+
+1 - Follow proper naming conventions
+2 - Ensure the functional mode option is unchecked
+3 - Remove third party services requests
+4 - Retrieve All Embedded Resources
+5 - Don’t forget to add Timers and place them correctly
+6 - Optimize Regular Expressions
+7 - Use JMeter Functions and avoid custom coding wherever it is possible
+8 - Use Groovy as scripting language
+9 - Use Assertions wisely and use them for response text
+10 - Disable the listeners 
+11 - Avoid excessive logging and only save the data you need.
+12 - Modularize the code wherever it is possible
+

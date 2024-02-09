@@ -168,6 +168,7 @@
 - JMeter Functions
 - Modularization
 - API Performance Testing
+- Scripting Best Practices
 - Distributed Testing
 - Reporting Concepts
   - Generating HTML Report
