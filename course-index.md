@@ -169,9 +169,8 @@
 - Modularization
 - API Performance Testing
 - Scripting Best Practices
+- Test Execution & Reporting Basics
 - Distributed Testing
-- Reporting Concepts
-  - Generating HTML Report
 - JMeter CICD pipeline Integration
 - Misc JMeter concepts
 - Tips & Tricks

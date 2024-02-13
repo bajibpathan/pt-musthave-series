@@ -1,0 +1,107 @@
+Test Execution & Reporting Basics
+=================================
+
+Test Execution
+--------------
+In performance testing, test execution refers to the process of running different performance tests on a software application or system to assess its responsiveness, stability, and scalability under various conditions.
+
+In JMeter test can be executed in 2 modes
+- GUI mode
+- Non-GUI / CLI mode
+
+GUI mode
+--------
+GUI - Graphical User Interface
+
+In this mode, it allows direct interaction with visual elements on the Jmeter interface.
+
+To execute the test in the GUI Mode,
+ simply navigate to the JMeter bin directory, 
+ launch the JMeter executable file, 
+ open the desired JMeter script, 
+ and start the test.This is the preferred mode of running high load test scenarions in JMeter. 
+
+This mode is user-friendly mode and primiarly  used for script development and debugging.
+
+This is not recommended for high load test scenarios.
+
+Non-GUI / CLI Mode
+------------------
+JMeter Non-GUI mode refers to running Apache JMeter without the graphical user interface.
+This is the preferred mode of running high load test scenarions in JMeter. 
+Some people also refer this as "Head less testing" as it does not reuqire a graphical interaface. 
+
+JMeter now calls this mode as CLI, which stands for Command Line Interface.
+
+The basic syntax for running JMeter this mode is
+
+jmeter [options]
+
+Basic Options
+--------------
+-n                          : Non-GUI / CLI Mode
+-t <script (jmx) file name> : Specifies the path to the JMeter test script (.jmx file) that you want to execute.
+-l <results file name>      : Specifies the path to the file where you want to save the results of the test.
+
+Additional Options
+-------------------
+-j <log file name>          : Specifies the location of log file to capture the execution logs
+-e                          : Generate report dashboard after load test
+-o <output folder>          : Specifies the folder where HTML dashboard report is generated.
+-r                          : Distributed mode (used for remote/distributed testing)
+-R <list of  remote servers>: Specifies remote servers for distributed testing.
+-J <argument>=<value>       : Define additional JMeter properties
+
+Non-GUI Mode help commands
+--------------------------
+jmeter -?
+jmeter -h
+
+Non-GUI Execution commands:
+
+To execute a test in Non-GUI / CLI mode and write the results into a log file
+jmeter -n -t [jmx file info] -l [log file info]
+
+To execute a test in Non-GUI / CLI mode, write the results into a log file and generate HTML report automatically
+jmeter -n -t [jmx file info] -l [log file info] -e -o [ouput directory]
+
+To generate the HTML report using the existing results
+jmeter -g [results info] -o [output directory]
+
+Test results can be viewed in while running the test and after the test.
+
+While running the test there are 3 ways to view them
+
+1- Enabling Summariser Configuration in jmeter.properties
+2- Using Console Status Logger Plugin
+3- Configuring Backend-listener with some external Database and view the results visualization tools.
+
+After the test, we can view the reuslts using the following methods.
+1-Loading the resutls file in any of the listener in Jmeter Interface
+2-Generating HTML report 
+  -It can be done from UI
+   -Automatically from the command line by using -e Option
+
+To configure the HTML report, you need to make the changes in "user.properties" file. You can refer the "reportgenerator.properties" for all the available configuraitons.
+
+
+To deploy the JPetStore demo application
+----------------------------------------
+# First install Docker in the laptop
+  1) Go to this site and download the Docker Desktop
+    https://docs.docker.com/desktop/install/windows-install/
+  2) Double-click Docker Desktop Installer.exe to run the installer
+
+Docker Desktop does not start automatically after installation. To start Docker Desktop:
+ Search for Docker, and select Docker Desktop in the search results.
+
+# pull the JpetStore Docker image from Docker hub
+ https://hub.docker.com/r/jloisel/jpetstore6
+ To pull the image using command prompt
+   docker pull docker pull jloisel/jpetstore6
+ To run the container, use the following command
+   docker run -d -p 8080:8080 jloisel/jpetstore6
+ These steps can be done from Docker Desktop UI.
+
+To launch the application in the browser, we need to use the below URL
+http://localhost:8080
