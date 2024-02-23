@@ -171,6 +171,7 @@
 - Scripting Best Practices
 - Test Execution & Reporting Basics
 - Distributed Testing
+- JMeter + InfluxDB + Grafana Integration
 - JMeter CICD pipeline Integration
 - Misc JMeter concepts
 - Tips & Tricks

@@ -1,0 +1,152 @@
+JMeter + InfluxDB + Grafana Integration
+========================================
+
+Components Involved:
+-------------------
+JMeter
+JPetStore Demo application
+InfluxDB
+Grafana
+
+JMeter will be used to generate the threads and sending the requests to JPetStore Demo application.
+JPetStore Demo application will be used as the target application from which performance metrics will be gathered.
+InfluxDB is used to store the performance metrics collected from JPetStore Demo. JMeter will send the metrics to InfluxDB
+Grafana is used to visulaize the performance collected from JPetStore Demo application. Grafana will pull the metrics from InfluxDB.
+
+JPetStore Demo application, InfluxDB & Grafana will be deployed as Docker Containers.
+
+InfluxDB
+--------
+- InfluxDB is a time-series database that will collect, store, process, and visualize time-series data.
+- Any data with timestamp is called time-series data.
+- It is designed to handle the high writes and query loads.
+- This is completely written in Go Langauge.
+
+InfluxDB Data Elements
+----------------------
+Organization  - It is a logical grouping or container for users, resources, and data
+Bucket - It is called database in a relational databsae terms.
+Measurement - It is called a table in a relational database terms.
+Field - Key vaue pairs which represents the actual data
+query - Opertaiton that retrieves the data from InfluxDB.
+
+
+Grafana
+-------
+It is an open-source analytics and monitoring platform.
+It enables you to query, visualize, alert on, and explore your metrics, logs, and traces wherever they are stored. 
+It provides rich interface for creating interactive Dashboards.
+
+Grafana doesn't store the data, instead it will retrieve the data from different sources.
+
+Steps to add the data source
+----------------------------
+- Search and Select Data Source
+- Define meaningful name
+- Provide URL, API key etc
+- Save and Test
+
+
+All these components can be installation in two ways.
+
+- Installing it directly onto OS level
+- Deploying it as a docker container.
+
+To install them onto OS level, we need to download and follow the instructions provided in the offical documentation.
+
+InfluxDB ->  https://www.influxdata.com/downloads/
+Grafana -> https://grafana.com/grafana/download
+
+To deploy these components as a docker containers, we need to make sure docker is installed.
+
+To verify the docker installation, we can type the following command
+docker --version
+
+Docker command to install JpetStore Demo
+docker run -d --name=jpetstore6 -p 8080:8080 jloisel/jpetstore6
+
+Options:
+docker run - to run the container from an image
+-d - 	run container in background
+--name=<name of the container>
+-p - Publish a container's port(s) to the host
+image name
+
+To see all the runnning containers
+docker ps
+
+To see all the containter including stopped ones
+docker ps -a
+
+To show only container IDs
+ docker ps -q
+
+
+Docker command to install InfluxDB
+docker run -d --name=influxdb -p 8086:8086 influxdb
+
+Influx DB URL: http://localhost:8086
+
+To generate API token:
+
+Go to Load Data -> API Tokens -> Generate API Token -> All Access API token
+
+Description name: jmeter-integration-token
+Token: <token>
+
+Jmeter back-end listener configuration
+
+Thread Group -> Add -> Listener -> Backend Listener
+Backend Listener Implementation -> InfluxdbBackendListenerClien
+
+Parameters:
+Influxdb URL: http://localhost:8086/api/v2/write?org=PCOE&bucket=jmeter
+Application: JpetStoreDemo
+Title: JpetStoreDemo
+influxdbToken: <token>
+
+
+Docker command to install Grafana
+docker run -d --name=grafana -p 3000:3000 grafana/grafana
+
+Grafana URL: http://localhost:3000
+username: admin
+password: admin
+
+To Add Data Source: Home -> Data Source
+
+Add Data Source
+name: influxdb-jmeter
+Query language: Flux
+
+Obtain the IP address of InfluxDB container
+docker inspect influxdb | grep -i ipaddress
+
+URL: http://172.17.0.3:8086
+
+Explore view will be used to write queries and view the data in graphical format.
+
+Simple query example
+
+from(bucket: "jmeter")
+  |> range(start: v.timeRangeStart, stop:v.timeRangeStop)
+  |> filter(fn: (r) =>
+    r._measurement == "jmeter" and
+    r._field == "pct95.0"
+  )
+
+Tokens create a Dashboard
+
+Home -> Dashboard -> Create Dashboard
+
+Add Visualization
+
+Select data source 
+
+Existing Dashboard link: https://grafana.com/grafana/dashboards/17506-jmeter-performance-testing-dashboard/
+
+To Import existing Dashboard: Dashboard -> New -> Import
+
+To clean-up the environment:
+docker ps -aq | xargs docker stop | xargs docker rm
+docker rmi $(docker images -aq)
