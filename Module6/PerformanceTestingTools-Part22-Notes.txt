@@ -1,0 +1,82 @@
+JMeter + Jenkins Integration
+============================
+
+Jenkins is an Automation platform to automate all sorts of tasks related to building,testing and delivering or deploying the software.
+
+Two Important terms:
+-------------------
+Job -> A description of work
+Build -> Result of a single execution of a Job
+
+
+Build Types:
+------------
+FreeStyle Project
+ - Simplest way to creat the build by specifiying list of commandsto acheive a task
+Pipeline
+ - Grouping different tasks and divide them into stages
+
+
+CI / CD 
+-------
+CI -> Continuous Integration
+CD -> Continuous Delivery / Deployment
+
+Organizations will follow the CI/CD practices to implement DevOps culutre to deploy quality and realiable product.
+
+CI stages
+---------
+-> Build
+-> Test
+-> Scan
+-> Upload
+
+Once the CI stages are completed then the build will deployed in QA, Staging and Production environments
+
+The difference between Continuous delivery and Deployment
+- In Continuous delivery, the build will be deployed in Production with manual approvals
+- In Continous deployment, the build will automaitcally deployed in Production along with other environments like QA, Staging etc
+
+
+Commands used in FreeStyle Project:
+
+set message="Hello World"
+echo %message%
+dir
+echo "Sample file" > sample_file.txt
+dir
+
+pipeline script with Jmeter script
+-----------------------------------
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone') {
+            steps {
+                echo 'Clonig the repo from GitHub'
+            }
+        }
+        stage('Execute') {
+            steps {
+                echo 'Execute Jmeter Script'
+                bat """
+                <jmeter.bat complete path> -n -t <script location> -l <results location>
+                """
+            }
+        }
+        stage('Publish Report'){
+            steps {
+                echo 'Publishing Report'
+                perfReport sourceDataFiles: '<results location>'
+            }
+        }
+    }
+}
+
+
+
+
+
+

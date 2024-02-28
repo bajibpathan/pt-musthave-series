@@ -172,7 +172,7 @@
 - Test Execution & Reporting Basics
 - Distributed Testing
 - JMeter + InfluxDB + Grafana Integration
-- JMeter CICD pipeline Integration
+- JMeter + Jenkins Integration
 - Misc JMeter concepts
 - Tips & Tricks
 
