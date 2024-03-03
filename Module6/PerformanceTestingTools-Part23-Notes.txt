@@ -1,0 +1,36 @@
+Throughput Controlling Elements
+============================
+
+What is a Throughput?
+It is the amount of data successfully processed within a specific timeframe. 
+
+Formula:
+--------
+Throughput = number of requests / total time 
+
+What will happen if we don’t control Throughput?
+
+If we don't control the throughput then we may see the below in the test
+- Unrealistic Simulation
+- Inaccurate Performance Metrics
+- Failure to Identify Bottlenecks
+
+JMeter Elements
+---------------
+Throughput Controller
+Weighted Switch Controller
+Constant Throughput Timer
+Throughput Shaping Timer
+
+Weighted Switch Controller & Throughput Shapring Timers are plugins and we need to install them using plugin manager before using the elements.
+
+Sample Throughput requriements:
+
+Functionalities
+===============
+ -> Login           : 150 TPS   -> 50% -> (150 / 300) * 100
+ -> Account Summary : 90 TPS    -> 30% -> (90 / 300) * 100  
+ -> Transfer        : 60 TPS    -> 20%-> (60 / 300) * 100
+                    ===========    
+Target Throughput   : 300 TPS  -> 100%  
+                    ===========

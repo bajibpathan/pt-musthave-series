@@ -174,7 +174,7 @@
 - JMeter + InfluxDB + Grafana Integration
 - JMeter + Jenkins Integration
 - Misc JMeter concepts
-- Tips & Tricks
+  - Throughput Controlling Elements
 
 ## Module 7: Monitoring tools
 
