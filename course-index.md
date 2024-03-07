@@ -175,6 +175,7 @@
 - JMeter + Jenkins Integration
 - Misc JMeter concepts
   - Throughput Controlling Elements
+  - Types of Thread Groups
 
 ## Module 7: Monitoring tools
 

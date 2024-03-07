@@ -1,0 +1,66 @@
+Types of Thread Groups
+======================
+A group of virtual threads or users is represented by a Thread Group.
+
+Types
+------
+Thread Group (Default)
+Arrival Thread Group
+Free Form Arrival Thread Group
+Concurrency Thread Group
+Stepping Thread Group
+Ultimate Thread Group
+Open Model Thread Group (latest)
+
+Some of the thread groups are available by default for someone we need to install "Custom Thread Group" plugin.
+
+
+Thread Group (Default)
+---------------------
+- Default and standard thread group elements
+- Many load testing scenarios can be desinged using this element.
+- It is based on concurrency and there won't any options to gradually ramp down the users.
+- JMeter will stop all the user simulanteously once the test ends.
+
+Arrival Thread Group
+--------------------
+- This thread group will be available using custom thread group plugin.
+- It is used for Thorughput based scenarios.
+- Based on the arrivals/sec, JMeter will create the required threads.
+- No gurantee for the concurrency.
+
+
+Free Form Arrival Thread Group
+------------------------------
+- This thread group will be available using custom thread group plugin.
+- This element also works exactly same like Arrival Thread Group
+- It excludes the Arrival thread configurations such as ramp-up time and ramp-up steps count.
+- It will help us to create a flexible schedule
+
+Concurrency Thread Group
+-------------------------
+- This thread group will be available using custom thread group plugin.
+- It is mainly focused on the concurrency.
+- Concurrency Thread Group doesn’t create all threads upfront, thus saving on memory.
+
+Stepping Thread Group
+----------------------
+- This thread group will be available using custom thread group plugin.
+- It is the old version of Concurrency thread group
+- It also primiarly focus on Concurrency.
+- In this element, the ramp-up and ramp-down configurations are done differently in comparison with the Concurrency Thread Group.
+
+Ultimate Thread Group
+---------------------
+- This thread group will be available using custom thread group plugin.
+- Highly customizable thread group
+- Many performance testers will use to create their load testing scenarios.
+
+Open Model Thread Group (latest)
+--------------------------------
+- This is recently released with JMeter 5.5 version
+- This work similar to Arrival thread group. However, we can create customize scheudles
+- We can also JMeter functions to define the rate and ramdom_arrivals
+
+
+Based on the given requirement, we may need to choose the most suitable type of thread group.
