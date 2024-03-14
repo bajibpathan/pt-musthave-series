@@ -176,6 +176,7 @@
 - Misc JMeter concepts
   - Throughput Controlling Elements
   - Types of Thread Groups
+  - JSR223 + Groovy Custom Code Examples
 
 ## Module 7: Monitoring tools
 

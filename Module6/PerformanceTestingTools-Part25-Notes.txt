@@ -1,0 +1,302 @@
+JSR223 + Groovy Custom Code Exmaples
+=====================================
+We can cover wide range of sceanrios using the built-in elements. However, in some specific scenarios, we may need to write custom code.
+We can levarage JSR223 elements in JMeter to write the custom code.
+
+In JMeter, we have some variables with which we can write custom scripts.
+
+Variable        Description
+========        ===========
+log             To write the information to the log file
+OUT             To display the output to Console
+vars            To read / write the Jmeter Variables
+props           To read / write the Jmeter Properties
+prev            To check the content of the previous sample result
+ctx             To gain access to the execution context. 
+sampler         To get/set some information of the Sampler before running
+SamplerResult   To get/set the values of the Sample after running
+
+
+Code Exmaples
+
+LOG
+===
+// Basic Syntax
+log.info("Type your message here")
+
+//Example 1
+log.info("This is example 1 message")
+
+//Example 2
+def language = "Groovy"  //Groovy Variable
+log.info("Hello " + language) 
+
+//Example 3
+log.info("INFO message here")
+log.warn("WARN message here")
+log.error("ERROR message here")
+
+
+
+OUT
+===
+// Basic Syntax
+OUT.println("Type your message here")
+
+//Example 1
+println("Sample Message")
+
+//Example 2
+def message = "OUT will be displayed the output to Console"
+println(message)
+
+VARS
+===
+// Syntax
+//vars.get("Variable Name")
+//vars.put("Variable name", "value")
+
+def app_url = vars.get("URL")
+log.info("Application URL is " + app_url)
+
+def message = "Hello Groovy"
+vars.put("Message_Var", message)
+
+//calculations
+//.toInteger() -> Convert string type data to Integer
+//.toString() -> Convert Integer type data to String
+def number = vars.get("NUM").toInteger()
+def sum = number + 20
+vars.put("NEW_SUM", sum.toString())
+
+// Generate Random Number
+import java.util.Random
+
+Random rand = new Random()
+def random = rand.nextInt(50)
+log.info("Random number is " + random)
+
+def random = new java.util.Random().nextInt(50)
+log.info("Random number is " + random)
+vars.put("RANDOM", random.toString())
+
+
+PROPS
+=====
+//Syntax
+//props.get("PROPERTY_NAME") 
+//props.put("PROPERTY_NAME", "VALUE")
+
+//To read remote_hosts property and display the output to log
+log.info("JMeter version " + props.get("jmeter.version"))
+log.info("Remote Hosts Property " + props.get("remote_hosts"))
+
+//To create a property
+props.put("MY_NEW_PROPERTY", "ABC123")
+
+
+
+PREV
+====
+
+//prev works with PostProcessor
+
+//to retrieve anything we use get
+log.info("Thread Group name is " + prev.getThreadName())
+
+//get responsetime - by default return long data
+log.info("Response Time is " + prev.getTime())
+vars.put("resp_time", prev.getTime()) - Exception
+vars.put("resp_time", prev.getTime(),toString())
+
+//get URL
+log.info("URL is: " + prev.getURL())
+
+//get Response Headers
+log.info("Resposnse Headers: \n" + prev.getResponseHeaders())
+
+//get ResponseCode
+log.info("HTTP Response Code -> " + prev.getResponseCode())
+
+//check the status of the sampler
+log.info("The HTTP request is passed -> " + prev.isSuccessful())
+
+//Pre SET
+prev.setResponseCode("404")
+
+def responseCode = prev.getResponseCode().toInteger()
+if(responseCode >= 400 && responseCode < 500) {
+	prev.setResponseOK()
+}
+
+//Example set
+def responseTime = prev.getTime().toInteger()
+log.info("Response Time is -> "  + prev.getTime())
+def responseTimeSLA = 200
+
+if (responseTime > responseTimeSLA) {
+	prev.setResponseMessage("The response time is beyond the given SLA")
+	prev.setSuccessful(false)
+	prev.setResponseCode("500")
+	prev.setResponseData("The exepected response time is " + responseTimeSLA + "ms but it took " + responseTime + " ms")
+}
+
+
+//Response time always 10 sec
+def newTime = new Date()
+prev.setStartTime(newTime.getTime())
+prev.setEndTime(newTime.getTime() + 10000)
+
+log.info("Respnose Time is -> " + prev.getTime())
+
+
+CTX
+===
+//ctx  works with PostProcessor
+
+//Current sampler
+log.info("Current Sampler class is: " + ctx.getCurrentSampler())
+
+//Access to Jmeter Engine
+log.info("JMeter Engine class is: " + ctx.getEngine())
+
+//Previous result, can be achived with prev
+log.info("Previous Response Message is: " + ctx.getPreviousResult().getResponseDataAsString())
+log.info("Previous Response Code is: " + ctx.getPreviousResult().getResponseCode())
+log.info("Previous Response URL is: " + ctx.getPreviousResult().getURL())
+log.info("Previous Response Time is: " + ctx.getPreviousResult().getTime())
+
+
+//Previous Thread
+log.info("Thread Name is: " + ctx.getThread().getThreadName())
+
+
+sampler
+=======
+sampler works with preprocessor element
+
+//get Sampler information
+log.info("****************************")
+log.info("Sampler Name is -> " + sampler.sample())
+log.info("Domain is -> " + sampler.getDomain())
+log.info("Path is -> " + sampler.getPath())
+log.info("Port is -> " + sampler.getPort())
+log.info("Protocol is -> " + sampler.getProtocol())
+log.info("Method is -> " + sampler.getMethod());
+log.info("****************************")
+
+//set Sampler Information
+//https://jmeter.apache.org/
+sampler.setDomain("jmeter.apache.org")
+sampler.setPath("/")
+sampler.setPort(443)
+sampler.setProtocol("https")
+sampler.setMethod("GET")
+
+SamplerResult 
+=============
+//Work with JSR223 Sampler
+
+log.info("*********************************")
+log.info( "The Response Code is : " + SampleResult.getResponseCode())
+log.info( "The Response Message is : " + SampleResult.getResponseMessage())
+log.info("*********************************")
+
+//set Response Code
+SampleResult.setResponseCode("201")
+ 
+//set Response Message
+SampleResult.setResponseMessage("This is message returned from JSR223 script")
+ 
+//set Response Data
+SampleResult.setResponseData("You will see this sentence in Response Data tab", "UTF-8")
+
+
+Misc Exmaples
+=============
+
+//To write the data a file
+
+import java.io.BufferedWriter
+import java.io.File
+import java.io.FileWriter
+import java.io.IOException
+
+
+String filename="/Users/bajipathan/Downloads/file.csv"
+String data="\n"+vars.get("token")+","+vars.get("userid")+","+vars.get("password")
+File file = new File(filename)
+
+FileWriter fw = new FileWriter(file.getAbsoluteFile(), true)
+BufferedWriter bw = new BufferedWriter(fw)
+
+// if file does not exists, then create it
+if (!file.exists()) {
+  file.createNewFile()
+}
+
+bw.write(data)
+bw.close()
+
+
+//To read the data from a file
+def filePath = "/Users/bajipathan/Downloads/file.txt"
+def fileContent = new File(filePath).text
+
+// Print the file content
+log.info("File Content:\n${fileContent}")
+
+//Convert the data time format
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
+// Get current date and time
+def currentDateTime = LocalDateTime.now()
+
+// Format the date and time
+def formattedDateTime = currentDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+
+// Print the result
+log.info("Current Date and Time: ${currentDateTime}")
+log.info("Formatted Date and Time: " + formattedDateTime)
+
+//To convert the current date/time to EPOC time
+import java.time.Instant
+import java.time.LocalDateTime
+import java.time.ZoneId
+
+// Get the current date and time
+def currentDateTime = LocalDateTime.now()
+
+// Convert to epoch time in milliseconds
+def epochTimeMillis = currentDateTime.atZone(ZoneId.systemDefault()).toInstant().toEpochMilli()
+
+// Print the result
+log.info("Epoch Time in Milliseconds: ${epochTimeMillis}")
+
+
+//To convert the UTC date/time to ETC date/tim
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.TimeZone
+
+// Define a UTC date and time string
+def utcDateTimeString = "2022-03-15T12:30:00"
+
+// Create a SimpleDateFormat object for parsing UTC date and time
+def sdfUtc = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+sdfUtc.timeZone = TimeZone.getTimeZone("UTC")
+
+// Parse the UTC date and time string
+def utcDate = sdfUtc.parse(utcDateTimeString)
+
+// Create a SimpleDateFormat object for formatting ETC date and time
+def sdfEtc = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
+sdfEtc.timeZone = TimeZone.getTimeZone("America/New_York") // ETC (Eastern Time Zone)
+
+// Format the date and time in ETC
+def etcDateTimeString = sdfEtc.format(utcDate)
+
+// Print the result
+log.info("UTC Date and Time: ${utcDateTimeString}")
+log.info("ETC Date and Time: ${etcDateTimeString}")
