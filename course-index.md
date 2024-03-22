@@ -177,6 +177,8 @@
   - Throughput Controlling Elements
   - Types of Thread Groups
   - JSR223 + Groovy Custom Code Examples
+  - Challenges
+  - Interview Questions
 
 ## Module 7: Monitoring tools
 

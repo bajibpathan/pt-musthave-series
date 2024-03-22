@@ -1,0 +1,127 @@
+JMeter Challenges
+=================
+1 # Capture OTP / Captcha
+-------------------------
+This challenge around capturing OTP / Captcha
+OTP - One Time Password
+Captcha - Completely Automated Public Turing test to tell Computers and Humans Apart
+
+OTPs are temporary, single-use codes that are generated and sent to the user through a secure channel, such as SMS, email, or mobile app.
+Captchas present challenges or puzzles that are easy for humans to solve but difficult for automated programs to bypass.
+
+ - Security features
+ - To prevent automated abuse
+ - To ensure that interactions come from genuine human users
+
+ Approaches
+ ----------
+- Pass Static code / text
+- Get the code in the response header
+- Implement code generation logic in the script
+- Disable the feature
+
+For any approach, we may need to work with development team. In addition to that, we also need to obtain approval from project / application team.
+
+
+2 # Out of Memory issues 
+-------------------------
+This challenge happened when client doesn't have enough worker nodes / load generators to target the workload.
+
+Approach
+--------
+- Evaluated  Single Machine Throughput
+- Scale down the workload
+
+To update the Memory arguments
+For Linux / Mac 
+ - Open Jmeter.sh in apache/bin directory
+ - Update the below line.  
+ 	 JVM_ARGS="-Xms50m -Xmx50m"
+For Windows
+ - Open Jmeter.sh in apache/bin directory
+ - Update the below line.  
+ 	 set HEAP=-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m
+
+Note: Xms means minimum heap Memory and Xmx maximum heap memory
+
+# Sample code to verify the JVM arguments
+import java.lang.management.ManagementFactory
+
+def runtimeMxBean = ManagementFactory.getRuntimeMXBean()
+def arguments = runtimeMxBean.getInputArguments()
+
+log.info("**********************************************")
+arguments.each {
+    log.info("JVM arguments:-> $it")
+}
+log.info("**********************************************")
+
+
+3 # Capture Email Transfer Code
+-------------------------------
+This challenge is around one functionality called Email Transfer
+ 
+There are 2 main business flows in this functionality
+ - Send Transfer
+ - Receive Transfer
+
+ Whenever the user initiate the transaction, an email will be sent to the recipient.
+ The recipient can then access the funds by opening the email and utilizing the provided link.
+ During the email transfer process, the application will trigger multiple API calls to the third-party vendor.
+ The vendor will validate the transaction and guide the recipient in depositing the funds into the designated financial institution.
+
+Acessing the codes /link directly from the test is challenging here.
+
+Approaches
+----------
+- Prep the test data for receive transfer before load test
+- Capturing the code from DB wit the help of Developer and DBA
+- Virtualizing the Service calls for Isolation tests
+
+
+4 # Value not in the response
+-----------------------------
+Noticed one value in the request URL which is not there in the server repsonse.
+It is not a dynamic value and related to the user
+The developer converting the userid into ASCII format
+
+ASCII - American Standard Code for Information Interchange. 
+
+It is a character encoding standard that assigns numeric values to represent characters 
+
+Approach
+--------
+- Created an user-defined function
+- Converted the UserID before that request
+
+# Sample Code to convert a text to ASCII
+// User Defined Function
+def convertAsciiValue(name) {
+
+	def len = name.length()
+	def convertedName = ""
+	
+	for(int i = 0; i < len ; i++) {
+		char character = name.charAt(i)
+	     int ascii = (int) character 
+	     convertedName += ascii.toString()	     
+		}
+	return convertedName
+}
+
+
+def name = "Jmeter"
+vars.put("AsciiValue", convertAsciiValue(name))
+log.info("Converted String = " + convertAsciiValue(name))
+
+5 # Miscellaneous
+-----------------
+These are some challenges tasks especially for JMeter Beginners
+
+- Date / Time zone conversions
+- Date / Time Format
+- File read / write scenarios
+
+Approach
+--------
+Write Custom Script using JSR223 / Groovy
