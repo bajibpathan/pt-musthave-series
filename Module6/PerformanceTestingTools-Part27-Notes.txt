@@ -1,0 +1,18 @@
+JMeter Interview Questions
+===========================
+1) What kind of applications have you tested using JMeter?
+2) What are the various JMeter elements that you have used in your projects?
+3) What is the difference between Pre and Post Processor elements? Name some elements that you have used in your projects
+4) Explain JMeter elements execution order
+5) Questions around Correlation and Parameterization
+6) What is Modularization and is it possible to achieve it in JMeter?
+7) Name some of the functions that you have used in your scripts and explain the purpose
+8) Explain the scripting best practices that you or your team followed in JMeter
+9) What is a JMeter Root CA Certificate and why do we need it?
+10) What is the need for a client-side certificate and how to configure it in JMeter?
+11) Explain the challenges (Scripting / Execution etc)  that you have faced
+12) Scenario-based questions
+13) What is distributed load testing and explain the different components involved in this testing?
+14) How many threads can we run in one worker node?
+15) Questions around Integration
+
