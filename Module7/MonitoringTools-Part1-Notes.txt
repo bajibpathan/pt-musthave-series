@@ -1,0 +1,87 @@
+Introduction to Performance Monitoring
+======================================
+What is Monitoring?
+The act of observing and collecting the data over time
+
+Why do we monitor?
+To track and make adjustments for improvement
+
+Where do we monitor?
+In a general terms, mointoring will be done in every where. Some common example areas areas
+Health Care, Finance, IT Systems, Security, Environment and many more
+
+What is Performance Monitroing?
+Monitoring the performance of an application or system(s)
+
+How do we monitoring?
+There are different tools available to monitor different aspects of the application or systems performance.
+- Applicaiton performance monitoring will be done using performance testing tools like LoadRunner, JMeter etc
+- System resource monitoirng will be done using native(in-built) tools. For exmaple, PerfMon for Windows OS and Unix based sytems, we will use top, iostat, vmstat, sar etc
+- We can use Application performance monitoring or APM tools like Dynatrace, AppDynamics, NewRelic to monitor the application and system resources health.
+
+Basically, all these tools will monitor the application/system and collect and report the different metrics for analysis purposes.
+
+What is a metric?
+A metric is a unit of measurement used to quantify or evaluate a specific aspect or characteristic of something.
+
+Monitoring areas
+- Application
+- Server
+
+Application:
+It deals with over all application health.
+Reported by performance testing tools
+Example metrics:
+- Response Time (Average & Percentile)
+- User Concurrency
+- Server Throughput (TPS)
+- Server Hits
+- HTTP Errors and many kore
+
+Server:
+It deals with over all server resource health
+Reported by native tools / apm tools
+Example metrics:
+- CPU Utilization
+- Memory Utilization
+- Disk Utilization
+- Network Utilization and many more
+
+Along with the server resource utilization metrics, we also monitor server configuration metrics using APM tools.
+
+Client Side Vs Server Side
+---------------------------
+
+Client Side:
+
+Measures the performance at the client side (Browser)
+Example Metrcis:
+- Page loading time
+- Number of page components (Image, CSS, JS)
+- Number of HTTP Calls
+- Number of Exceptions and many more
+
+Client side monitoring will done using
+- APM Tools, Fiddler, Browser Dev Tools, Google light house etc
+
+Server Side:
+Measures the performance of the server side processing
+Example metrics:
+- Transaction Response Time
+- Server Throughput
+- Server Errors / Exceptions
+- Server Resource Utilization and many more
+
+Server side monitoring will done using
+- APM tools, PT Tools
+
+What is KPI?
+KPI Stands for Key Performance Indicator
+KPIs are high-level indicators that reflect organization's strategic goals and objectives
+
+For example,
+- Revenue growth
+- Customer satisfaction index etc
+
+KPIs and metrics are often interrelated. But they are not the same thing. 
+
