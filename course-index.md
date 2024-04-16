@@ -183,9 +183,13 @@
 ## Module 7: Monitoring tools
 
 - Introduction to Performance Monitoring
-- Monitoring Areas
-  - Server Health
-  - Application Helath
+  - What, Why, Where and How ?
+  - What is a metric?
+  - Monitoring Areas
+    - Server Health
+    - Application Helath
+  - Client Side Vs Server Side Metrics
+  - KPIs
 - Native Monitoring tools
   - Windows - Perfmon
   - Linux - TOP / SAR / VMSTAT
