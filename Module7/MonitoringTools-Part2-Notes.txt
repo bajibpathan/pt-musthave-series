@@ -1,0 +1,28 @@
+Windows Native Monitoring Tools
+======================================
+In any server, there are 3 mian hardware components
+Processor, which does the computing nothing but performs tasks, solves problems, or processes data, etc
+Memory, which stores information temporarily; 
+Storage, where data is saved for the long term. 
+
+Computer hardware can only understand Binary language ('0's and '1's)
+An operating system manages all other applications and programs in a computer/server, and it is loaded into the system by a boot program. 
+It helps applications to interact with a computer’s hardware.
+
+Operating System Functions:
+Memory Management
+Processor Management
+Device Management
+Storage Management etc
+
+Two commonly used operating Systems
+- Windows
+- Linux
+
+Windows Native monitroing tools
+- Task Manager
+  - It provides users with real-time information and control over various aspects of their computer's performance and processes.
+- Perforamnce Monitor or PerfMon
+  - It allows users to track and analyze various system performance metrics over time, helping to identify performance bottlenecks, diagnose hardware or software issues, and optimize system resources.
+
+  
