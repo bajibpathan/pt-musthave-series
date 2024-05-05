@@ -1,0 +1,21 @@
+JMeter - Perfmon Integration
+============================
+To integration JMeter with Perfmon, we need to follow below steps
+
+Step # 1 - Install JMeter Plugin
+https://jmeter-plugins.org/wiki/PerfMon/
+
+Step # 2 - Install the Perfmon Server Agent
+ - Download the Server Agent (https://github.com/undera/perfmon-agent/releases/download/2.2.3/ServerAgent-2.2.3.zip)
+ - Unzip the package
+ - Launch the agent using startAgent.sh script on Unix, or startAgent.bat script on Windows.
+
+
+To verify the communication use the telnet command
+- telnet <hostname> <port> 
+Example : telnet localhost 4444
+
+If telnet command is not working then go to Turn Windows Features on/off and select the Telnet option
+
+If the server is crashed during the test execution, please download and copy the dll to the serveragent lib folder
+https://github.com/cnstar9988/sigar/raw/master/sigar-amd64-winnt.dll
