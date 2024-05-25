@@ -1,0 +1,61 @@
+Required Softwares
+===================
+1) Oracle VirtualBox
+2) 7zip
+3) SSH client (MobaXterm)
+
+Download links
+===============
+Oracle VirtualBox - https://www.virtualbox.org/wiki/Downloads
+7zip - https://www.7-zip.org/download.html
+MobaXterm - https://mobaxterm.mobatek.net/download.html
+Almaxlinux OVA file - https://www.linuxtrainingacademy.com/ova/
+
+
+Pre-requisites for AlmaLinux OVA file installation
+==================================================
+#1 - Download & Install Oracle VirtualBox
+#2 - Download & Install 7zip
+#3 - Download & Install MobaXterm
+
+
+Steps for Installing Almalinux Using OVA file
+=============================================
+#1 - Download Almalinux OVA file 
+#2 - Extract Almalinux OVA file
+#3 - Import Almalinux OVA file to Oracle VirtualBox Softwares
+#4 - Update Network from NAT to Bridged Adapter
+#4 - Start the Virtual Machine
+    Login Information
+    ==================
+     - Username: adminuser
+     - Password: adminuser
+#5 - Login directly to Virtual Machine from VirtualBox 
+#6 - Login to Virtual Machine Using SSH client
+
+Steps for Installing Linux using WSL (Windows Subsystem Linux)
+================================================================
+To check all the avaible WSL commands
+wsl --help
+
+To Install wsl and also to download & install ubuntu
+wsl --install
+
+To list all the availble distrubutions to download from online
+wsl -l -o
+
+To install specific distribution
+wsl --install -d <Distribution_Name>
+
+To check the list of installed distributions
+wsl -links
+
+To install Almalinux with WSL
+Go to MicroSoft Store and search for AlmaLinux and Install it.
+
+To uninstall any Distribution
+wsl --unregister <Distribution_Name>
+Go to Apps Settings and look for the distribution and uninstall it.
+
+
+
