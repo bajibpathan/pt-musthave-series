@@ -25,15 +25,15 @@ Steps for Installing Almalinux Using OVA file
 #2 - Extract Almalinux OVA file
 #3 - Import Almalinux OVA file to Oracle VirtualBox Softwares
 #4 - Update Network from NAT to Bridged Adapter
-#4 - Start the Virtual Machine
+#5 - Start the Virtual Machine
     Login Information
     ==================
      - Username: adminuser
      - Password: adminuser
-#5 - Login directly to Virtual Machine from VirtualBox 
+#6 - Login directly to Virtual Machine from VirtualBox 
     To find the IP address of the virutal machine, type the below command 
     ip a
-#6 - Login to Virtual Machine Using SSH client
+#7 - Login to Virtual Machine Using SSH client
 
 Steps for Installing Linux using WSL (Windows Subsystem Linux)
 ================================================================
