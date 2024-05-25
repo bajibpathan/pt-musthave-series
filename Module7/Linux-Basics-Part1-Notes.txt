@@ -31,6 +31,8 @@ Steps for Installing Almalinux Using OVA file
      - Username: adminuser
      - Password: adminuser
 #5 - Login directly to Virtual Machine from VirtualBox 
+    To find the IP address of the virutal machine, type the below command 
+    ip a
 #6 - Login to Virtual Machine Using SSH client
 
 Steps for Installing Linux using WSL (Windows Subsystem Linux)
@@ -48,7 +50,7 @@ To install specific distribution
 wsl --install -d <Distribution_Name>
 
 To check the list of installed distributions
-wsl -links
+wsl -l
 
 To install Almalinux with WSL
 Go to MicroSoft Store and search for AlmaLinux and Install it.
