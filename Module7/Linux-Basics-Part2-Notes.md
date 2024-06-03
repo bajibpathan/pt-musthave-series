@@ -240,7 +240,7 @@ $ mkdir directoryname
 $ mkdir learn_linux
 ```
 
-13. \*\*rmdir" - To delete an empty directory
+13. **rmdir** - To delete an empty directory
 
 ```bash
 #Syntax:
@@ -304,22 +304,22 @@ $ rm -r old_logs
 ```
 
 ### Wild Cards
+
 These special characters allow you to select filenames based on patterns of characters.
 
-* - Matches any characters
-? - Matches any single character
-[characters] - Matches any character that is a member of the set characters.
-[!characters] - Matches any character that is not a member of the set characters
+- - Matches any characters
+    ? - Matches any single character
+    [characters] - Matches any character that is a member of the set characters.
+    [!characters] - Matches any character that is not a member of the set characters
 
 Examples:
 | Pattern | Matches|
 | --------- | --------- |
-| *         | All filenames |
-| g*      | All filenames that begin with the character "g" |
-| b*.txt     | All filenames that begin with the character "b" and end with the characters ".txt" |
-| Data???    | Any filename that begins with the characters "Data" followed by exactly 3 more characters |
-| [abc]*   | Any filename that begins with "a" or "b" or "c" followed by any other characters |
-
+| _ | All filenames |
+| g_ | All filenames that begin with the character "g" |
+| b*.txt | All filenames that begin with the character "b" and end with the characters ".txt" |
+| Data??? | Any filename that begins with the characters "Data" followed by exactly 3 more characters |
+| [abc]* | Any filename that begins with "a" or "b" or "c" followed by any other characters |
 
 ### I/O Redirections
 
@@ -330,24 +330,27 @@ Input and output in the Linux environment is distributed across three streams. T
 - standard error (stderr)
 
 The streams are also numbered:
+
 - stdin (0)
 - stdout (1)
 - stderr (2)
 
-Standard input comes from the user’s keyboard. 
+Standard input comes from the user’s keyboard.
 Standard output and standard error are displayed on the user’s terminal as text
 
 Linux includes redirection commands for each stream.These can be used to write standard output or standard error to a file.
 
 Overwrite
-``` bash
+
+```bash
 - > : standard output
 - < : standard input
 - 2> : standard error
 ```
 
 Append
-``` bash
+
+```bash
 - >> : standard output
 - <<> : standard input
 - 2>> : standard error
@@ -388,11 +391,11 @@ $ cat file.txt >> file1.txt
 $ cat > file1.txt
 Press Crtrl + d after to end the command execution
 
-# To show line numbering 
+# To show line numbering
 $ cat -n file1.txt
 ```
 
-18. **more** - To view text files in your terminal one screen page at a time
+19. **more** - To view text files in your terminal one screen page at a time
 
 ```bash
 #Syntax:
@@ -408,7 +411,7 @@ $ more -5 /etc/sudo.conf
 $ cat /etc/sudo.conf | more
 ```
 
-19. **less** - To view text files in your terminal one screen page at a time
+20. **less** - To view text files in your terminal one screen page at a time
 
 ```bash
 #Syntax:
@@ -424,7 +427,7 @@ $ less -5 /etc/sudo.conf
 $ cat /etc/sudo.conf | less
 ```
 
-20. **head** - To return the specified number of files from the top
+21. **head** - To return the specified number of files from the top
 
 ```bash
 #Syntax:
@@ -443,7 +446,7 @@ $ head -n 5 file1.txt file2.txt
 
 ```
 
-21. **tail** - To return the specified number of files from the bottom
+22. **tail** - To return the specified number of files from the bottom
 
 ```bash
 #Syntax:
@@ -463,7 +466,8 @@ $ tail -n 5 file1.txt file2.txt
 # To see the real time updates
 $ tail -f file.txt
 ```
-22. **grep** - To search and match the text pattern in the files
+
+23. **grep** - To search and match the text pattern in the files
 
 ```bash
 #Syntax:
@@ -476,7 +480,7 @@ $ grep "error" log.txt
 # To ignore the case of the matching string
 $ grep -i "error" log.txt
 
-# To display the non matching lines 
+# To display the non matching lines
 $ grep -v "success" log.txt
 
 # To find the line numbers against matching input strring
@@ -504,11 +508,11 @@ $ grep -c "error" log.txt
 $ ls | grep -i name
 ```
 
-23. **find** - To find things based on the conditions
+24. **find** - To find things based on the conditions
 
 ```bash
 #Syntax:
-$ find path options patterns 
+$ find path options patterns
 
 #Example:
 # To find a file by name in the current directory
@@ -529,7 +533,7 @@ $ find / -type f -name *.log
 
 ```
 
-24. **clear** - To clear the terminal display
+25. **clear** - To clear the terminal display
 
 ```bash
 #Syntax:
@@ -539,7 +543,7 @@ $ clear
 $ clear
 ```
 
-25. **exit** - To exit from the terminal
+26. **exit** - To exit from the terminal
 
 ```bash
 #Syntax
