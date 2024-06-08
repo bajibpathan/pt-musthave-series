@@ -226,6 +226,9 @@ $ cd ..
 #To change the working directory to home directory
 $ cd
 
+or
+
+$ cd ~
 #To change the working directory to the previous one
 $ cd -
 ```
@@ -379,7 +382,7 @@ $ cat file.txt fil1.txt
 $ cat file.txt > new_file.txt
 
 # To redirect the multiple file contents to a single file.
-$ cat file.txt > new_file.txt
+$ cat file.txt file1.txt > new_file.txt
 
 # To display the content of file in reverse order
 $ tac file.txt
