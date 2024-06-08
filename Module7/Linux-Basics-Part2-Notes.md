@@ -519,41 +519,31 @@ $ find path options patterns
 
 #Example:
 # To find a file by name in the current directory
-$ find . -name file.txt
+$ find . -name "file.txt"
 
 # To find a file by name in the home directory
-$ find /home -name file.txt
-$ find ~ -name file.txt
+$ find /home -name "file.txt"
+$ find ~ -name "file.txt"
 
 # To find a  file by name in the home directory by ignoring case
-$ find /home -iname file.txt
+$ find /home -iname "file.txt"
 
 # To find directories in the root directory with the given name
-$ find / -type d -name test
+$ find / -type d -name "test"
 
 # To find files in the root directory with the given name
-$ find / -type f -name *.log
+$ find / -type f -name "*.log"
 
 ```
 
-25. **clear** - To clear the terminal display
-
-```bash
-#Syntax:
-$ clear
-
-#Example
-$ clear
-```
-
-26. **exit** - To exit from the terminal
+25. **exit** - To exit from the terminal
 
 ```bash
 #Syntax
 $ exit
 
 #Example
-$ exit
+$ exits
 ```
 
 ### Other Important commands for Administrators
