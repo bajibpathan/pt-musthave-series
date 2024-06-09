@@ -310,10 +310,10 @@ $ rm -r old_logs
 
 These special characters allow you to select filenames based on patterns of characters.
 
-- - Matches any characters
-    ? - Matches any single character
-    [characters] - Matches any character that is a member of the set characters.
-    [!characters] - Matches any character that is not a member of the set characters
+- "\*" Matches any characters
+- "?" - Matches any single character
+- "[characters]" - Matches any character that is a member of the set characters.
+- "[!characters]" - Matches any character that is not a member of the set characters
 
 Examples:
 | Pattern | Matches|
