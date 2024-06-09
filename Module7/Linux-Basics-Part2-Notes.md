@@ -355,7 +355,7 @@ Append
 
 ```bash
 - >> : standard output
-- <<> : standard input
+- << : standard input
 - 2>> : standard error
 ```
 
