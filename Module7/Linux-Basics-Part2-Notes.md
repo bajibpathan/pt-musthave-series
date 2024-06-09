@@ -318,8 +318,8 @@ These special characters allow you to select filenames based on patterns of char
 Examples:
 | Pattern | Matches|
 | --------- | --------- |
-| _ | All filenames |
-| g_ | All filenames that begin with the character "g" |
+| "*" | All filenames |
+| g* | All filenames that begin with the character "g" |
 | b*.txt | All filenames that begin with the character "b" and end with the characters ".txt" |
 | Data??? | Any filename that begins with the characters "Data" followed by exactly 3 more characters |
 | [abc]* | Any filename that begins with "a" or "b" or "c" followed by any other characters |
