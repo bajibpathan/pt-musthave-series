@@ -543,7 +543,7 @@ $ find / -type f -name "*.log"
 $ exit
 
 #Example
-$ exits
+$ exit
 ```
 
 ### Other Important commands for Administrators
