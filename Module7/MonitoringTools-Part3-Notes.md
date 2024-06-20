@@ -32,6 +32,11 @@ In some situations, when no external monitoring tools are available for Linux se
 
 ### Tools with some examples
 
+```bash
+#Note: Some of the tools won't be available by default. So, we need to install sysstat package.
+$ sudo dnf install sysstat
+```
+
 1. **top** - Provides a real-time, dynamic view of system processes and CPU usage
 
 ```bash
@@ -61,9 +66,6 @@ $ top -u
 ```bash
 # Syntax:
 $ vmstat [options] [delay [count]]
-
-# Note: If you don't have vmstat on your machine, install it by running
-$ sudo dnf install sysstat
 
 # To display system information
 $ vmstat
