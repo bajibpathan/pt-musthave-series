@@ -58,7 +58,7 @@ T. Sort by the TIME+ column.
 P. Sort by the %CPU column.
 
 # To Filter Processes by Specific User
-$ top -u
+$ top -u root
 ```
 
 2. **vmstat** - To obtain information about memory, system processes, paging, interrupts, block I/O, disk, and CPU scheduling
@@ -88,9 +88,6 @@ $ vmstat 5 3
 ```bash
 # Syntax:
 $ mpstat [options] [arguments]
-
-# Note: If you don't have vmstat on your machine, install it by running
-$ sudo dnf install sysstat
 
 # To display processor and CPU statistics.
 $ mpstat
