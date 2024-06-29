@@ -193,7 +193,13 @@
 - Native Monitoring tools
   - Windows - Perfmon
   - Linux - TOP / SAR / VMSTAT
-- Application Performance Monitoring (APM) tools
+- Application Performance Monitoring (APM)
+  - What is APM?
+  - Why it is important?
+  - APM Core features
+  - Beneftis of APM
+  - How to choose the right tool?
+  - APM vs Observability
   - Dynatrace
     - Architecture
     - Navigate Dynatrace UI
