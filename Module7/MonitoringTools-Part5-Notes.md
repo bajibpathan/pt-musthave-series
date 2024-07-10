@@ -8,7 +8,7 @@ Dynatrace is a revolutionary sofware intellegence platform that offers comprehen
 - Empowerment
 - All-in-One Solutions
 
-### What you can do with Dynatrace?
+### What can you do with Dynatrace?
 
 - Infrastructure Observability
 - Application Observability
@@ -20,7 +20,7 @@ Dynatrace is a revolutionary sofware intellegence platform that offers comprehen
 - Custom Solutions
 - Dynatrace Hub
 
-### Why many companies love Dynatrace?
+### Why do many companies love Dynatrace?
 
 - Top Magic Quadrant leader
 - Dynatrace works out of the box

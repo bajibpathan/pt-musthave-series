@@ -202,8 +202,8 @@
   - APM vs Observability
   - Dynatrace
     - What is Dynatrace?
-    - What you can do with Dynatrace?
-    - Why many people love Dynatrace?
+    - What can you do with Dynatrace?
+    - Why do many people love Dynatrace?
     - Components
     - Deployment models
     - Types of Dynatrace Users
