@@ -201,7 +201,13 @@
   - How to choose the right tool?
   - APM vs Observability
   - Dynatrace
-    - Architecture
+    - What is Dynatrace?
+    - What you can do with Dynatrace?
+    - Why manay people love Dynatrace?
+    - Components
+    - Deployment models
+    - Types of Dynatrace Users
+    - Important terminology
     - Navigate Dynatrace UI
     - Server OS Health metrics
     - Application Service metrics
