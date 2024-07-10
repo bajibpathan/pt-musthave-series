@@ -203,7 +203,7 @@
   - Dynatrace
     - What is Dynatrace?
     - What you can do with Dynatrace?
-    - Why manay people love Dynatrace?
+    - Why many people love Dynatrace?
     - Components
     - Deployment models
     - Types of Dynatrace Users
