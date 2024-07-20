@@ -208,6 +208,10 @@
     - Deployment models
     - Types of Dynatrace Users
     - Important terminology
+    - How to setup Dynatrace?
+      - Demo Application Installation
+      - Creating a Free trial account
+      - OneAgent Installation
     - Navigate Dynatrace UI
     - Server OS Health metrics
     - Application Service metrics
