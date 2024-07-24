@@ -212,7 +212,7 @@
       - Demo Application Installation
       - Creating a Free trial account
       - OneAgent Installation
-    - Navigate Dynatrace UI
+    - Dynatrace User Interface Navigation
     - Server OS Health metrics
     - Application Service metrics
       - Distributed tracing
