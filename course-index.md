@@ -213,9 +213,13 @@
       - Creating a Free trial account
       - OneAgent Installation
     - Dynatrace User Interface Navigation
-    - Server OS Health metrics
-    - Application Service metrics
-      - Distributed tracing
+    - Dynatrace Important features Deep Dive
+      - Hosts
+      - Front end
+      - Services
+      - Distributed Traces
+      - Multidimensional Analysis
+      - Session Segmentation
     - Dashboard creation
 
 ## Module 8: Documentation tools
