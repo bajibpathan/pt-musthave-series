@@ -221,6 +221,8 @@
       - Multidimensional Analysis
       - Session Segmentation
     - Dashboard creation
+    - Dyantrace Jmeter Integration
+    - Load Test Analysis Quick Tips
 
 ## Module 8: Documentation tools
 
